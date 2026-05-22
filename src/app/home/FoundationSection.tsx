@@ -260,7 +260,7 @@ export default function FoundationSection() {
 
           {/* Mission */}
            <div id="mission" className="rounded-md border border-[#B4D5FF] bg-white shadow-[0px_4px_40px_5px_#0668E11A] p-md">
-              <img src="/home/icons/Mission-icon.svg" alt="vision icon" className="size-iconsize-xl" />
+              <img src="/home/icons/mission-icon.svg" alt="vision icon" className="size-iconsize-xl" />
 
             <h3 className="mt-sm font-extrabold text-h2 text-[#1B1C17]">
               Mission
