@@ -35,24 +35,30 @@ export default function FooterClient({ children }: { children: React.ReactNode }
                   
 
                   {/* Social Icons */}
-                  <div className="  flex items-center gap-3 lg:gap-6 text-lg lg:text-xl">
-                   <div className="p-2 bg-[#FFFFFF1A] rounded-full">
-                      <FaXTwitter />
-                    </div>
+                    <div className="mt-3 lg:mt-0 flex items-center gap-3 lg:gap-6  lg:text-xl">
                     
-                    
+
                     <div className="p-2 bg-[#FFFFFF1A] rounded-full">
-                      <ImLinkedin2 />
-                    </div><div className="p-2 bg-[#FFFFFF1A] rounded-full">
+                      <Link href={"https://www.linkedin.com/company/connect-ec-app/about/"} target="_blank">
+                        <ImLinkedin2 />
+                      </Link>
+                    </div>
+                    <div className="p-2 bg-[#FFFFFF1A] rounded-full">
+                      <Link href={"https://connectec.blog"} target="_blank">
                       <FaMediumM />
+                      </Link>
                     </div>
 
-                    
                     <div className="p-2 bg-[#FFFFFF1A] rounded-full">
+                      <Link href={"https://www.youtube.com/@TeamConnectEC"} target="_blank">
                       <FaYoutube />
-                    </div><div className="p-2 bg-[#FFFFFF1A] rounded-full">
+                      </Link>
+                    </div>
+                    <div className="p-2 bg-[#FFFFFF1A] rounded-full">
+                      <Link href={" https://www.instagram.com/team_connect_ec/?hl=en"} target="_blank">
                       <FaInstagram />
-                    </div>    
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -64,10 +70,10 @@ export default function FooterClient({ children }: { children: React.ReactNode }
                   <div className="mt-5 lg:mt-0 flex flex-col lg:flex-row justify-center items-center lg:items-start lg:justify-between ">
                     <div className="flex justify-center items-center flex-wrap lg:flex-nowrap lg:block   text-[14px] md:text-[16px]  text-start lg:font-medium space-x-3">
                      
-                      <Link href="/terms-and-condition">&nbsp;&nbsp;Terms & Conditions</Link>
+                      <Link href="/terms-and-condition" target="_blank">&nbsp;&nbsp;Terms & Conditions</Link>
                       |&nbsp;&nbsp; {""}
                       
-                      <Link href="/privacy-policy">Privacy Policy</Link>
+                      <Link href="/privacy-policy" target="_blank">Privacy Policy</Link>
                     </div>
                   
                   </div>

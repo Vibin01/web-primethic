@@ -48,7 +48,7 @@ export default function ConnectECSection() {
                 interview to joining.</p>
 
               <div className="flex flex-col sm:flex-row gap-sm">
-                <div className="flex items-start gap-xs rounded-md p-sm bg-white border-[#D3E6FF] border shadow-[1px_9px_20px_0px_#BDDBFF0D,_3px_37px_37px_0px_#BDDBFF0A,_8px_82px_50px_0px_#BDDBFF08,_14px_146px_59px_0px_#BDDBFF03,_21px_229px_64px_0px_#BDDBFF00]">
+                <div className="md:w-1/2 flex items-start gap-xs rounded-md p-sm bg-white border-[#D3E6FF] border shadow-[1px_9px_20px_0px_#BDDBFF0D,_3px_37px_37px_0px_#BDDBFF0A,_8px_82px_50px_0px_#BDDBFF08,_14px_146px_59px_0px_#BDDBFF03,_21px_229px_64px_0px_#BDDBFF00]">
                 <div> 
                   <XCircle className="size-iconsize-sm  fill-red-500 text-white" />
                 </div>  <div>
@@ -61,11 +61,11 @@ export default function ConnectECSection() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start gap-xs rounded-md p-sm bg-white border-[#D3E6FF] border shadow-[1px_9px_20px_0px_#BDDBFF0D,_3px_37px_37px_0px_#BDDBFF0A,_8px_82px_50px_0px_#BDDBFF08,_14px_146px_59px_0px_#BDDBFF03,_21px_229px_64px_0px_#BDDBFF00]">
+                <div className="md:w-1/2 flex items-start gap-xs rounded-md p-sm bg-white border-[#D3E6FF] border shadow-[1px_9px_20px_0px_#BDDBFF0D,_3px_37px_37px_0px_#BDDBFF0A,_8px_82px_50px_0px_#BDDBFF08,_14px_146px_59px_0px_#BDDBFF03,_21px_229px_64px_0px_#BDDBFF00]">
                   <img src={"/solutions/icons/tick-icon.svg"} alt="tick icon" className="size-iconsize-sm " />
                   <div>
                     <h4 className="font-bold text-xl text-[#0668E1] mb-1">
-                      Hiring doesn't fail due to lack of effort.
+                      Connect EC brings everything together
                     </h4>
                     <p className="text-xl text-[#0668E1] font-medium">
                       so hiring becomes <span className="font-bold">visible, connected,</span> and <span className="font-bold">predictable.</span>
