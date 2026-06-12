@@ -84,7 +84,7 @@ export const Header = () => {
           >
             Team
           </button> */}
-          <Link href={"/"} className="hidden md:flex">Home</Link>
+          <Link href={"/"} className="hidden md:flex font-medium text-base hover:text-[#0668E1]">Home</Link>
           <button
            id="mission-button"
             onClick={() => {
@@ -95,7 +95,7 @@ export const Header = () => {
                 scrollToSection("mission");
               }
             }}
-            className="hidden md:flex cursor-pointer"
+            className="hidden md:flex cursor-pointer font-medium text-base hover:text-[#0668E1]"
           >Vision</button>
            <button
             id="mission-button"
@@ -107,11 +107,11 @@ export const Header = () => {
                 scrollToSection("mission");
               }
             }}
-            className="hidden md:flex cursor-pointer"
+            className="hidden md:flex cursor-pointer font-medium text-base hover:text-[#0668E1]"
           >
             Mission
           </button>
-          <Link  href={"/solutions"} className="hidden md:flex">Solutions</Link>
+          <Link  href={"/solutions"} className="hidden md:flex font-medium text-base hover:text-[#0668E1]">Solutions</Link>
   <MobileMenu
     isMenuOpen={isMenuOpen}
     setIsMenuOpen={setIsMenuOpen}

@@ -1,4 +1,3 @@
-import { Shuffle, Users, Building2 } from "lucide-react";
 
 const items = [
   {
@@ -18,7 +17,7 @@ const items = [
 export default function WhatsNextSection() {
   return (
     <section className="w-full py-[10%] md:py-[5%]">
-      <div className="mx-auto px-4 text-center">
+      <div className="mx-auto text-center">
         
         {/* Small Heading */}
         <p className="text-[#1B1C17] font-bold uppercase text-base">
@@ -36,7 +35,7 @@ export default function WhatsNextSection() {
         </p>
 
         {/* Items */}
-        <div className="mt-sm flex justify-center items-center">
+        <div className="mt-md flex justify-center items-center">
           {items.map((item, index) => {
 
             return (
@@ -46,8 +45,8 @@ export default function WhatsNextSection() {
               >
                 
                 {/* Item */}
-                <div className="px-lg flex flex-col items-center">
-                    <img src={item.icon} alt={item.title} className="size-iconsize-lg scale-125 md:scale-100 "/>
+                <div className="px-md md:px-lg flex flex-col items-center">
+                    <img src={item.icon} alt={item.title} className="size-iconsize-lg scale-125 md:scale-90 "/>
 
                   <p className="mt-xs text-[#1B1C17] font-medium text-base mt-xs">
                     {item.title}
@@ -62,6 +61,13 @@ export default function WhatsNextSection() {
             );
           })}
         </div>
+
+         <p className="mt-xl font-medium text-base">
+          Because alignment is not a hiring problem.
+        </p>
+         <p className="mt-sm font-bold text-base">
+         It is a systems problem.
+        </p>
       </div>
     </section>
   );

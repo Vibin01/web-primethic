@@ -31,7 +31,7 @@ const cardData = [
     points: [
       "Track interviews, schedules, and offers in one place",
       "Stay informed at every stage",
-      "Access feedback across rounds, interview, and offer stages",
+      "Access feedback across interview and offer stages",
       "Make decisions with clarity—not guesswork",
     ],
   },
@@ -75,7 +75,7 @@ export default function HiringCardsSection() {
               <div className="border-t border-[#D2E5FF] my-sm"></div>
 
               {/* Points */}
-              <div className="space-y-md">
+              <div className="space-y-sm">
                 {card.points.map((point, pointIndex) => (
                   <div key={pointIndex} className="flex items-start gap-xs">
                     

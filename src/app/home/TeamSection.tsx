@@ -3,14 +3,14 @@ import React, { useEffect } from 'react'
 
 export const TeamSection = () => {
 
-    useEffect(() => {
-    const shouldScroll = sessionStorage.getItem("scrollToTeam");
-    if (shouldScroll === "true") {
-      sessionStorage.removeItem("scrollToTeam");
-      const teamSection = document.getElementById("team");
-      teamSection?.scrollIntoView({ behavior: "smooth" });
-    }
-  }, []);
+  //   useEffect(() => {
+  //   const shouldScroll = sessionStorage.getItem("scrollToTeam");
+  //   if (shouldScroll === "true") {
+  //     sessionStorage.removeItem("scrollToTeam");
+  //     const teamSection = document.getElementById("team");
+  //     teamSection?.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // }, []);
 
   return (
     <div id='team' className='py-[5%] flex flex-col justify-center items-center '>

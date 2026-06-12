@@ -2,79 +2,79 @@ const cards = [
   {
     title: "WHY ALIGNMENT",
     icon: "/home/icons/question-box-icon.svg",
-    topText: "When everything is seamless, there is a clear flow.",
-    subtitle: "Seamless Flow",
+    topText: "When continuity holds, alignment becomes sustainable.",
+    subtitle: "Continuity in Action",
     items: [
       {
         number: "01",
         color: "#589AEB",
-        text: "What you understand leads to what you decide.",
+        text: "What you understand shapes what you decide.",
       },
       {
         number: "02",
         color: "#0668E1",
-        text: "What you decide leads to what gets done.",
+        text: "What you decide shapes what gets done.",
       },
       {
         number: "03",
         color: "#044AA0",
-        text: "What gets done leads to the outcome.",
+        text: "What gets done shapes the outcome.",
       },
     ],
     bottomText:
-      "That alignment consistently produces reliable results.",
+      "Alignment holds when continuity is preserved across each transition.",
   },
   {
     title: "THE REALITY",
     icon: "/home/icons/question-box-icon.svg",
     topText:
-      "But that flow doesn’t always hold as systems grow and interact",
-    subtitle: "Break in Flow",
+      "As systems grow and interact, continuity becomes harder to maintain.",
+    subtitle: "When Continuity Weakens",
     items: [
       {
         number: "01",
         color: "#589AEB",
-        text: "Decisions gradually drift from what was intended",
+        text: "Decisions gradually drift from what was intended.",
       },
       {
         number: "02",
         color: "#0668E1",
-        text: "Execution often moves in a different direction",
+        text: "Execution moves in a different direction.",
       },
       {
         number: "03",
         color: "#044AA0",
-        text: "Outcomes become increasingly harder to predict",
+        text: "Outcomes become increasingly difficult to predict.",
       },
     ],
     bottomText:
-      "Not due to lack of capability—but because alignment weakens.",
+      "Not because capability is absent. But continuity weakens across transitions.",
   },
   {
     title: "PRIMETHIC",
     icon: "/home/icons/primethic-box-icon.svg",
     topText:
       "We ensure alignment holds consistently under real-world conditions.",
-    subtitle: "We design systems that:",
+    subtitle: "We Design Systems That Preserve",
     items: [
       {
         number: "01",
         color: "#589AEB",
-        text: "Continuity — carry intent seamlessly to outcome",
+        text: "Continuity — Preserve intent across transitions.",
       },
       {
         number: "02",
         color: "#0668E1",
-        text: "Execution — turn decisions consistently into action",
+        text: "Execution — Translate direction into action consistently.",
       },
       {
         number: "03",
         color: "#044AA0",
-        text: "Alignment — keep everything aligned as it scales",
+        text: "Alignment — Keep outcomes consistently aligned with aspiration.",
       },
     ],
     bottomText:
-      "So outcomes remain stable—even as complexity increases.",
+      "So outcomes remain reliable - even as complexity increases.",
   },
 ];
 
@@ -170,24 +170,7 @@ export default function PrimethicSection() {
         ))}
       </div>
 
-      {/* Bottom Content */}
-      <div className="text-center mt-[10%]">
-        <p className="font-bold text-base text-[#0668E1] uppercase mb-sm">
-          PRIMETHIC DIFFERENCE
-        </p>
-
-        <p className="font-medium text-base text-[#1B1C17]">
-          Most solutions focus on what is visible.
-        </p>
-
-        <h2 className="w-[80%] md:w-auto font-extrabold text-h2 text-[#1B1C17] mb-xs mx-auto">
-          We work on what makes everything hold together.
-        </h2>
-
-        <p className="font-medium text-base text-[#1B1C17] max-w-[760px] mx-auto">
-          Not just the experience — but what sustains it underneath.
-        </p>
-      </div>
+    
     </section>
   );
 }

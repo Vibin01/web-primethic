@@ -7,6 +7,12 @@ import WhyConnectEC from "./WhyConnectEC";
 import MakeHiringEasyBanner from "./MakeHiringEasyBanner";
 import WhatsNextSection from "./WhatsNextSection";
 
+export const metadata = {
+  title: "Alignment in Hiring Systems | Connect EC",
+  description:
+    "Alignment in hiring systems ensures decisions, execution, and outcomes stay consistent across the hiring journey.",
+};
+
 const page = () => {
   return (
     <div className="space-y-[5%]">

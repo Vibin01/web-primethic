@@ -1,16 +1,15 @@
 import Image from "next/image";
-import { Check } from "lucide-react";
 
 const leftFeatures = [
   "Manage all hiring workflows in one place",
-  "Get real-time visibility across hiring journey",
+  "Gain real-time visibility across the hiring journey",
   "Detect delays and potential drop-offs early",
 ];
 
 const rightFeatures = [
   "Coordinate seamlessly across hiring teams",
   "Capture structured and actionable feedback",
-  "Predictable hiring outcomes delivered reliably",
+  "Create more predictable hiring outcomes",
 ];
 
 export default function WhyConnectEC() {
@@ -52,7 +51,7 @@ export default function WhyConnectEC() {
             ))}
           </div>
 
-          <div className="  md:hidden w-full space-y-md">
+          <div className="  md:hidden w-full space-y-sm">
             {[...leftFeatures,...rightFeatures].map((item, index) => (
               <FeatureCard key={index} text={item} />
             ))}

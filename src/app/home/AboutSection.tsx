@@ -40,7 +40,7 @@ export default function AboutSection() {
              <img
             src="/logo/primethic-logo-blue.svg"
             alt="Ethic Icon"
-            className="w-5 h-5 lg:w-10 lg:h-10"
+            className="w-5 h-auto lg:w-10 lg:h-auto"
           />
          
           <span>latform Excellence</span>

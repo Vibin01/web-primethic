@@ -209,7 +209,7 @@ export default function VisibilitySection() {
               className="font-medium text-[#1B1C17]
               text-base"
             >
-              Execution becomes consistent
+              Execution becomes more consistent
             </p>
           </div>
 
@@ -225,7 +225,7 @@ export default function VisibilitySection() {
               className="font-medium text-[#1B1C17]
               text-base"
             >
-              Outcomes become predictable
+              Outcomes become more predictable
             </p>
           </div>
           </div>

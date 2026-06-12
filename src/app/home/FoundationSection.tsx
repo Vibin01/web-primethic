@@ -5,7 +5,7 @@ import { useEffect } from "react";
 type AlignmentCardType = {
   title: string;
   badge: string;
-  description: string;
+  description: string[];
   align: "left" | "right";
 };
 
@@ -14,24 +14,43 @@ const cards: AlignmentCardType[] = [
     title: "Internal Alignment",
     badge: "(PRIME)",
     align: "left",
-    description:
-      "A smooth flow from understanding to action—bringing clarity, consistency, and reliable outcomes.",
-  },
+    description:[
+      "A coherent flow from understanding to action.",
+      "Creating clarity, consistency, and reliable outcomes."
+ ] },
   {
     title: "External Validity",
     badge: "(ETHIC)",
     align: "right",
-    description:
-      "Ensuring what works within one system also holds true when it interacts with others.",
-  },
+    description:[
+      "Ensuring alignment remains consistent across different systems and contexts.",
+      "So what holds within continues to hold across."
+ ] },
 ];
+
+
+const items = [
+    {
+          icon: "/home/icons/within-individuals-icon.svg",
+      title: "Within individuals.",
+    },
+    {
+    icon: "/home/icons/between-teams-icon.svg",
+      title: "Between teams.",
+    },
+    {
+       icon: "/home/icons/across-system-icon.svg",
+      title: "Across systems.",
+    },
+  ];
+
 
 function AlignmentMobile({ cards }: { cards: AlignmentCardType[] }) {
   return (
     <div className="block md:hidden relative w-full max-w-[400px] mx-auto">
       {/* TOP CARD */}
-      <div className="relative">
-        <svg viewBox="0 0 400 220" className="w-full h-auto">
+      <div className="relative mt-md">
+        <svg viewBox="0 0 400 220" className="w-full ">
           <defs>
             <linearGradient id="mobileBorder1" x1="1" y1="0" x2="1" y2="1">
               <stop offset="0%" stopColor="#FFFFFF" />
@@ -65,15 +84,16 @@ function AlignmentMobile({ cards }: { cards: AlignmentCardType[] }) {
           />
         </svg>
 
-        <div className="absolute inset-0 p-[10%] flex flex-col justify-center text-left">
+        <div className="absolute inset-0 mb-xl p-[10%] flex flex-col justify-center text-left">
           <h2 className="font-bold text-h5">
             {cards[0].title}{" "}
             <span className="text-[#0A67E8]">{cards[0].badge}</span>
           </h2>
-
-          <p className="my-sm text-base">
-            {cards[0].description}
+{cards[0].description.map((text)=>(
+          <p className="my-1 text-base ">
+            {text}
           </p>
+          ))}
         </div>
       </div>
 
@@ -122,15 +142,17 @@ function AlignmentMobile({ cards }: { cards: AlignmentCardType[] }) {
         </svg>
 
         <div className="absolute inset-0 p-[10%] mt-xl flex flex-col justify-center text-right rotate-180">
-          <div className="rotate-180">
+          <div className="rotate-180 pt-xl">
             <h2 className="font-bold text-h5">
               {cards[1].title}{" "}
               <span className="text-[#0A67E8]">{cards[1].badge}</span>
             </h2>
 
-            <p className="py-sm text-base">
-              {cards[1].description}
-            </p>
+            {cards[0].description.map((text)=>(
+          <p className="my-1 text-base ">
+            {text}
+          </p>
+          ))}
           </div>
         </div>
       </div>
@@ -195,12 +217,13 @@ function AlignmentCard({ item }: { item: AlignmentCardType }) {
         >
           {item.title} <span className="text-[#0A67E8]">{item.badge}</span>
         </h2>
-
+{item.description.map((text)=>(
         <p
           className={`mt-3 text-xl md:w-[80%] ${isLeft ? "text-left " : "text-right"}`}
         >
-          {item.description}
+          {text}
         </p>
+        ))}
       </div>
     </div>
   );
@@ -216,10 +239,10 @@ export default function FoundationSection() {
     }, []);
   return (
     <section className="w-full">
-      <div className=" ">
-        <h2 className="font-extrabold text-h2 text-[#1B1C17]">Foundation</h2>
-
-        <h3 className="mt-[5%] m-md text-center text-base font-bold text-[#0668E1]">
+      
+        <h2 className="font-extrabold text-h2 text-[#1B1C17] text-center mb-md">Foundation</h2>
+<div className="md:p-md md:bg-[#FFFFFF] md:rounded-xl md:shadow-[0px_4px_40px_5px_#0668E11A]">
+        <h3 className="mb-md text-h5 text-center text-base font-bold text-[#0668E1]">
           Our approach is built on two essentials:
         </h3>
 
@@ -234,45 +257,75 @@ export default function FoundationSection() {
         <AlignmentMobile cards={cards}/>
 
         {/* BOTTOM TEXT */}
-        <div className="text-center mt-sm">
-          <p className="text-xl font-medium mb-sm">
-            Together, they make one thing possible:
-          </p>
-          <p className="text-xl font-medium">
-            alignment that holds — within and across.
-          </p>
-        </div>
+         <section className="flex flex-col items-center py-xl">
+      <h2 className="text-h4 font-bold text-[#1B1C17] mb-xs">
+        Together
+      </h2>
 
+      <p className="text-xl font-medium text-[#1B1C17] mb-xl">
+        Alignment Within
+        <span className="mx-xs">+</span>
+        Alignment Across
+        <span className="mx-xs">=</span>
+        <span className=" font-semibold text-[#0668E1]">
+          Creates one outcome:
+        </span>
+      </p>
+
+      <h3 className="text-h4 font-bold text-[#1B1C17] mb-md">
+        Alignment That Holds
+      </h3>
+
+      <div className="flex flex-col sm:flex-row w-full sm:w-auto gap-md sm:gap-0  sm:items-center sm:justify-center">
+        {items.map((item, index) => {
+
+          return (
+            <div key={item.title} className="flex items-center">
+              <div className="flex items-center gap-xs sm:px-xl">
+                <img src={item.icon} alt={item.title} className="size-iconsize-sm" />
+                <span className="text-base font-medium text-[#1B1C17]">
+                  {item.title}
+                </span>
+              </div>
+
+              {index < items.length - 1 && (
+                <div className="hidden md:flex h-iconsize-sm w-px bg-[#D3E6FF]" />
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </section>
+</div>
         {/* VISION & MISSION */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-md mt-xl">
+        <div id="vision" className="grid grid-cols-1 md:grid-cols-2 gap-md mt-xl">
           {/* Vision */}
-          <div className="rounded-md border border-[#B4D5FF] bg-white shadow-[0px_4px_40px_5px_#0668E11A] p-md">
+          <div className="rounded-md border border-[#B4D5FF] bg-white shadow-[0px_4px_40px_5px_#0668E11A] p-sm">
               <img src="/home/icons/vision-icon.svg" alt="vision icon" className="size-iconsize-xl" />
 
             <h3 className="mt-sm font-extrabold text-h2 text-[#1B1C17]">
               Vision
             </h3>
 
-            <p className="mt-sm text-xl text-[#1B1C17]">
-              To unify systems and their environment into seamless coherence.
+            <p className="mt-sm text-base text-[#1B1C17]">
+              To unify individuals, teams, and systems through continuity, coherence, and alignment.
             </p>
           </div>
 
           {/* Mission */}
-           <div id="mission" className="rounded-md border border-[#B4D5FF] bg-white shadow-[0px_4px_40px_5px_#0668E11A] p-md">
+           <div id="mission" className="rounded-md border border-[#B4D5FF] bg-white shadow-[0px_4px_40px_5px_#0668E11A] p-sm">
               <img src="/home/icons/mission-icon.svg" alt="vision icon" className="size-iconsize-xl" />
 
             <h3 className="mt-sm font-extrabold text-h2 text-[#1B1C17]">
               Mission
             </h3>
 
-            <p className="mt-sm text-xl text-[#1B1C17]">
-              To bridge the gap between aspiration and achievement
-              <br/>through alignment that sustains under real conditions.
+            <p className="mt-sm text-base text-[#1B1C17]">
+              To bridge the gap between aspiration and achievement through alignment that sustains under real-world conditions.
             </p>
           </div>
         </div>
-      </div>
+      
     </section>
   );
 }

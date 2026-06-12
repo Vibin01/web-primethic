@@ -9,5 +9,5 @@ export default async function Footer() {
   );
 }
 
-export const revalidate = 142800; 
+export const revalidate = 0; 
 

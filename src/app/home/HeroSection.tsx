@@ -1,6 +1,44 @@
+import React from "react";
+
+const frameworkItems = [
+  {
+    icon: "/home/icons/within-individuals-icon.svg",
+    title: "Within individuals.",
+    description: "Understanding, decisions, actions aligned.",
+  },
+  {
+    icon: "/home/icons/between-teams-icon.svg",
+    title: "Between teams.",
+    description: "Direction, execution, coordination aligned.",
+  },
+  {
+    icon: "/home/icons/across-system-icon.svg",
+    title: "Across systems.",
+    description: "Alignment remains valid across systems.",
+  },
+];
+
+const impactItems = [
+  {
+    icon: "/home/icons/seamless-experiences-icon.svg",
+    title: "Seamless experiences.",
+    description: "Transitions remain connected.",
+  },
+  {
+    icon: "/home/icons/clear-decisions-icon.svg",
+    title: "Clear decisions.",
+    description: "Direction remains visible.",
+  },
+  {
+    icon: "/home/icons/reliable-outcomes-icon.svg",
+    title: "Reliable outcomes.",
+    description: "Intent remains aligned with outcome.",
+  },
+];
+
 export default function HeroSection() {
   return (
-    <section className=" mt-[15%]">
+    <section className=" mt-[15%] pb-[5%]">
       <div className="w-full ">
         {/* Small Heading */}
         <p className="font-bold text-base  text-[#1B1C17] mb-sm">
@@ -13,80 +51,64 @@ export default function HeroSection() {
         </h1>
 
         {/* Framework Section */}
-        <div className="mb-md">
-          <h2 className="font-bold text-base  text-[#1B1C17] mb-sm">
+        <div className="mb-md md:mb-xl">
+          <h2 className="font-bold text-base text-[#1B1C17] mb-sm">
             The Framework
           </h2>
 
-          <div className="flex flex-col md:flex-row flex-wrap md:items-center gap-xl text-[#1B1C17]">
-            {/* Item 1 */}
-            <div className="flex items-center gap-xs">
-              <img
-                src="/home/icons/within-individuals-icon.svg"
-                alt="Within individuals."
-              />
+          <div className="flex flex-col md:flex-row md:items-center gap-md text-[#1B1C17]">
+            {frameworkItems.map((item,index) => (
+              <React.Fragment key={item.title}>
+              <div
+                className="flex-1 flex items-start gap-sm"
+              >
+                <img src={item.icon} alt={item.title} />
 
-              <p className="font-medium text-base ">Within individuals.</p>
-            </div>
-
-            {/* Item 2 */}
-            <div className="flex items-center gap-xs">
-              <img
-                src="/home/icons/between-teams-icon.svg"
-                alt="Within individuals."
-              />
-
-              <p className="font-medium text-base ">Between teams.</p>
-            </div>
-
-            {/* Item 3 */}
-            <div className="flex items-center gap-xs">
-              <img
-                src="/home/icons/across-system-icon.svg"
-                alt="Within individuals."
-              />
-
-              <p className="font-medium text-base ">Across systems.</p>
-            </div>
+                <div>
+                  <p className="font-medium text-base text-[#1B1C17] mb-1">
+                    {item.title}
+                  </p>
+                  <p className="text-xl text-[#727272]">{item.description}</p>
+                </div>
+              </div>
+            
+                {index < impactItems.length - 1 && (
+  <div className="hidden md:block self-stretch w-[2px] bg-[#DEEDFF]" />
+)}
+              
+              </React.Fragment>
+            ))}
           </div>
         </div>
 
         {/* Impact Section */}
-        <div>
-          <h2 className="font-bold text-base  text-[#1B1C17] mb-5">
+        <div className="pt-md">
+          <h2 className="font-bold text-base text-[#1B1C17] mb-sm">
             The Impact
           </h2>
 
-          <div className="flex flex-col md:flex-row gap-md">
-            {/* Card 1 */}
-            <div className="w-[65%] md:w-[22%] p-md rounded-md border border-[#D3E6FF] bg-white shadow-[0px_0px_40px_5px_rgba(6,104,225,0.10)] flex items-center gap-xs">
-                         <img src="/home/icons/seamless-experiences-icon.svg" alt="Within individuals." />
+          <div className="flex flex-col md:flex-row  gap-md">
+            {impactItems.map((item,index) => (
+              <React.Fragment key={item.title}>
+              <div
+                className="flex-1 flex items-start gap-sm"
+              >
+                <img src={item.icon} alt={item.title} />
 
-
-              <p className="font-medium text-xl text-[#1B1C17]">
-                Seamless experiences.
-              </p>
-            </div>
-
-            {/* Card 2 */}
-            <div className="w-[65%] md:w-[22%] p-md rounded-md border border-[#D3E6FF] bg-white shadow-[0px_0px_40px_5px_rgba(6,104,225,0.10)] flex items-center gap-xs">
-                                       <img src="/home/icons/clear-decisions-icon.svg" alt="Within individuals." />
-
-
-              <p className="font-medium text-xl text-[#1B1C17]">
-                Clear decisions.
-              </p>
-            </div>
-
-            {/* Card 3 */}
-            <div className="w-[65%] md:w-[22%] p-md rounded-md border border-[#D3E6FF] bg-white shadow-[0px_0px_40px_5px_rgba(6,104,225,0.10)] flex items-center gap-xs">
-                      <img src="/home/icons/reliable-outcomes-icon.svg" alt="Within individuals." />
-
-
-              <p className="font-medium text-xltext-[#1B1C17]">
-                Reliable outcomes.
-              </p>
-            </div>
+                <div>
+                  <p className="font-medium text-base text-[#1B1C17] mb-1">
+                    {item.title}
+                  </p>
+                  <p className="text-xl text-[#727272]">{item.description}</p>
+                </div>
+              </div>
+            
+                {index < impactItems.length - 1 && (
+  <div className="hidden md:block self-stretch w-[2px] bg-[#DEEDFF]" />
+)}
+              
+              </React.Fragment>
+            ))}
           </div>
         </div>
       </div>
