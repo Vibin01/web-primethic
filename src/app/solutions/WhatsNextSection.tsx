@@ -1,0 +1,74 @@
+
+const items = [
+  {
+    icon: "/solutions/icons/decision.svg",
+    title: "Decisions",
+  },
+  {
+    icon: "/solutions/icons/relationship.svg",
+    title: "Relationships",
+  },
+  {
+    icon: "/solutions/icons/organization.svg",
+    title: "Organizations",
+  },
+];
+
+export default function WhatsNextSection() {
+  return (
+    <section className="w-full py-[10%] md:py-[5%]">
+      <div className="mx-auto text-center">
+        
+        {/* Small Heading */}
+        <p className="text-[#1B1C17] font-bold uppercase text-base">
+          WHAT’S NEXT
+        </p>
+
+        {/* Main Heading */}
+        <h2 className="mt-sm text-[#0668E1] font-extrabold text-h2">
+          Connect EC is the first step.
+        </h2>
+
+        {/* Description */}
+        <p className="mt-md font-medium text-base">
+          We are building systems that sustain alignment across:
+        </p>
+
+        {/* Items */}
+        <div className="mt-md flex justify-center items-center">
+          {items.map((item, index) => {
+
+            return (
+              <div
+                key={index}
+                className="flex items-center"
+              >
+                
+                {/* Item */}
+                <div className="px-md md:px-lg flex flex-col items-center">
+                    <img src={item.icon} alt={item.title} className="size-iconsize-md scale-105 md:scale-90 "/>
+
+                  <p className="mt-xs text-[#1B1C17] font-medium text-base mt-xs">
+                    {item.title}
+                  </p>
+                </div>
+
+                {/* Divider */}
+                {index !== items.length - 1 && (
+                  <div className="hidden md:block w-px h-10 bg-[#D3E6FF]" />
+                )}
+              </div>
+            );
+          })}
+        </div>
+
+         <p className="mt-xl font-medium text-base">
+          Because alignment is not a hiring problem.
+        </p>
+         <p className="mt-sm font-bold text-base">
+         It is a systems problem.
+        </p>
+      </div>
+    </section>
+  );
+}
