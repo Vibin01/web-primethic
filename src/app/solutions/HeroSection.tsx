@@ -26,7 +26,7 @@ export default function HeroSection() {
         </h1>
 
         {/* Description */}
-        <div className="flex justify-between w-full">
+        <div className="flex flex-col md:flex-row gap-sm justify-between w-full">
           <div className="flex gap-sm">
             <img
               src="/solutions/icons/tick-icon.svg"
