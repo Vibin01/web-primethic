@@ -46,7 +46,7 @@ export default function WhatsNextSection() {
                 
                 {/* Item */}
                 <div className="px-md md:px-lg flex flex-col items-center">
-                    <img src={item.icon} alt={item.title} className="size-iconsize-lg scale-125 md:scale-90 "/>
+                    <img src={item.icon} alt={item.title} className="size-iconsize-md scale-105 md:scale-90 "/>
 
                   <p className="mt-xs text-[#1B1C17] font-medium text-base mt-xs">
                     {item.title}

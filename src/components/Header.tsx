@@ -85,7 +85,7 @@ export const Header = () => {
             Team
           </button> */}
           <Link href={"/"} className="hidden md:flex font-medium text-base hover:text-[#0668E1]">Home</Link>
-          <button
+          {/* <button
            id="mission-button"
             onClick={() => {
               if (window.location.pathname !== "/") {
@@ -96,8 +96,8 @@ export const Header = () => {
               }
             }}
             className="hidden md:flex cursor-pointer font-medium text-base hover:text-[#0668E1]"
-          >Vision</button>
-           <button
+          >Vision</button> */}
+           {/* <button
             id="mission-button"
             onClick={() => {
               if (window.location.pathname !== "/") {
@@ -110,7 +110,7 @@ export const Header = () => {
             className="hidden md:flex cursor-pointer font-medium text-base hover:text-[#0668E1]"
           >
             Mission
-          </button>
+          </button> */}
           <Link  href={"/solutions"} className="hidden md:flex font-medium text-base hover:text-[#0668E1]">Solutions</Link>
   <MobileMenu
     isMenuOpen={isMenuOpen}

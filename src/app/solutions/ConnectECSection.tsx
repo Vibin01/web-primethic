@@ -47,32 +47,41 @@ export default function ConnectECSection() {
               <p className="text-base font-medium "> Helping candidates, recruiters, and employers stay aligned from
                 interview to joining.</p>
 
-              <div className="flex flex-col sm:flex-row gap-sm">
-                <div className="md:w-1/2 flex items-start gap-xs rounded-md p-sm bg-white border-[#D3E6FF] border shadow-[1px_9px_20px_0px_#BDDBFF0D,_3px_37px_37px_0px_#BDDBFF0A,_8px_82px_50px_0px_#BDDBFF08,_14px_146px_59px_0px_#BDDBFF03,_21px_229px_64px_0px_#BDDBFF00]">
-                <div> 
-                  <XCircle className="size-iconsize-sm  fill-red-500 text-white" />
-                </div>  <div>
-                    <h4 className="font-bold text-xl text-[#F0431D] mb-1">
-                      Hiring doesn't fail due to lack of effort.
-                    </h4>
-                    <p className="text-xl text-[#F0431D] font-medium">
-                      It fails when decisions, execution, and outcomes don't
-                      stay aligned.
-                    </p>
-                  </div>
-                </div>
-                <div className="md:w-1/2 flex items-start gap-xs rounded-md p-sm bg-white border-[#D3E6FF] border shadow-[1px_9px_20px_0px_#BDDBFF0D,_3px_37px_37px_0px_#BDDBFF0A,_8px_82px_50px_0px_#BDDBFF08,_14px_146px_59px_0px_#BDDBFF03,_21px_229px_64px_0px_#BDDBFF00]">
-                  <img src={"/solutions/icons/tick-icon.svg"} alt="tick icon" className="size-iconsize-sm " />
-                  <div>
-                    <h4 className="font-bold text-xl text-[#0668E1] mb-1">
-                      Connect EC brings everything together
-                    </h4>
-                    <p className="text-xl text-[#0668E1] font-medium">
-                      so hiring becomes <span className="font-bold">visible, connected,</span> and <span className="font-bold">predictable.</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <div className="md:w-[90%] rounded-md border border-[#D3E6FF] shadow-[0px_4px_40px_5px_#0668E11A] bg-[#FFFFFF] p-md">
+      <div className="rounded-sm border border-[#B2D0F6] bg-[#EEF6FF] p-sm">
+        <h3 className="text-xl font-bold text-[#1B1C17]">
+          Hiring doesn't fail due to lack of effort.
+        </h3>
+
+        <p className="mt-xs text-xl text-[#727272]">
+          It fails when decisions, execution, and outcomes don't stay aligned.
+        </p>
+      </div>
+
+      <div className="mt-sm">
+        <p className="text-base font-bold text-[#0668E1]">
+          Connect EC brings everything together
+        </p>
+
+        <div className=" mt-sm flex  items-center justify-between gap-2 text-xl text-[#2C2C2C]">
+          <span>so hiring becomes</span>
+
+          {[
+    { id: 1, label: "Visible" },
+    { id: 2, label: "Connected" },
+    { id: 3, label: "Predictable" },
+  ].map((step) => (
+            <div key={step.id} className="flex items-center gap-xs">
+              <span className="flex size-iconsize-sm items-center justify-center rounded-full bg-[#0668E1] text-lg font-bold text-white">
+                {step.id}
+              </span>
+
+              <span>{step.label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
             </div>
           </div>
 

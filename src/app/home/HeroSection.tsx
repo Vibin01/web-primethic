@@ -41,18 +41,18 @@ export default function HeroSection() {
     <section className=" mt-[15%] pb-[5%]">
       <div className="w-full ">
         {/* Small Heading */}
-        <p className="font-bold text-base  text-[#1B1C17] mb-sm">
+        <p className="font-extrabold text-h2  text-[#0668E1] ">
           Alignment Intelligence
         </p>
 
         {/* Main Heading */}
-        <h1 className="font-extrabold text-h2  text-[#0668E1] max-w-[850px] mb-xl">
+        <h1 className="font-bold text-h5   md:max-w-[40%] mb-xl ">
           We build systems where alignment holds under real-world conditions
         </h1>
 
         {/* Framework Section */}
         <div className="mb-md md:mb-xl">
-          <h2 className="font-bold text-base text-[#1B1C17] mb-sm">
+          <h2 className="font-bold text-h6 text-[#0668E1] mb-sm">
             The Framework
           </h2>
 
@@ -83,7 +83,7 @@ export default function HeroSection() {
 
         {/* Impact Section */}
         <div className="pt-md">
-          <h2 className="font-bold text-base text-[#1B1C17] mb-sm">
+          <h2 className="font-bold text-h6 text-[#0668E1] mb-sm">
             The Impact
           </h2>
 

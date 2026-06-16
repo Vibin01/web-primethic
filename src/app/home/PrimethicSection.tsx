@@ -1,7 +1,7 @@
 const cards = [
   {
     title: "WHY ALIGNMENT",
-    icon: "/home/icons/question-box-icon.svg",
+    icon: "/home/icons/why-alignment-icon.svg",
     topText: "When continuity holds, alignment becomes sustainable.",
     subtitle: "Continuity in Action",
     items: [
@@ -26,7 +26,7 @@ const cards = [
   },
   {
     title: "THE REALITY",
-    icon: "/home/icons/question-box-icon.svg",
+    icon: "/home/icons/the-reality-icon.svg",
     topText:
       "As systems grow and interact, continuity becomes harder to maintain.",
     subtitle: "When Continuity Weakens",
@@ -89,7 +89,7 @@ export default function PrimethicSection() {
             className="w-full bg-white border border-[#D3E6FF] rounded-md p-sm shadow-[0px_4px_40px_5px_rgba(6,104,225,0.10)] flex flex-col"
           >
             {/* Icon */}
-            <div className="size-iconsize-xl rounded-sm bg-[#E6F0FC] flex items-center justify-center mb-sm">
+            <div className="size-iconsize-xl rounded-sm bg-[#E6F0FC]- flex items-center justify-center mb-sm">
               <img
                 src={card.icon}
                 alt={card.title}

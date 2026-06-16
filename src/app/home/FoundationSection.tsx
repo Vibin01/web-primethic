@@ -258,19 +258,7 @@ export default function FoundationSection() {
 
         {/* BOTTOM TEXT */}
          <section className="flex flex-col items-center py-xl">
-      <h2 className="text-h4 font-bold text-[#1B1C17] mb-xs">
-        Together
-      </h2>
-
-      <p className="text-xl font-medium text-[#1B1C17] mb-xl">
-        Alignment Within
-        <span className="mx-xs">+</span>
-        Alignment Across
-        <span className="mx-xs">=</span>
-        <span className=" font-semibold text-[#0668E1]">
-          Creates one outcome:
-        </span>
-      </p>
+      
 
       <h3 className="text-h4 font-bold text-[#1B1C17] mb-md">
         Alignment That Holds
