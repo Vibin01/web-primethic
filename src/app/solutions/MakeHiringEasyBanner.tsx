@@ -36,6 +36,7 @@ export default function MakeHiringEasyBanner() {
           <div className=" w-full">
             {/* Heading */}
             <h2 className="text-[#1B1C17] font-extrabold text-h2">
+<<<<<<< HEAD
               Hiring Alignment made EASY
             </h2>
 
@@ -51,6 +52,27 @@ export default function MakeHiringEasyBanner() {
             </p>
 
             <div className="flex items-center gap-1 sm:gap-sm mt-sm">
+=======
+              Make Hiring EASY.
+            </h2>
+
+            {/* Description */}
+            <div className="mt-sm ">
+              <p className=" font-bold text-base mb-1">
+                Stop guessing. Start seeing.
+              </p>
+
+              <p className="font-medium text-base">
+                Connect EC — Make hiring EASY.
+              </p>
+            </div>
+
+            <p className="mt-md font-bold text-base text-[#0668E1]">
+              Unlock Connect EC for Free
+            </p>
+
+            <div className="flex items-center gap-1 sm:gap-sm mt-md">
+>>>>>>> a058e2410b6512ea713e52c1b3c0f84543a4dcc5
               {acrossRoles.map((role, index) => (
                 <div
                   key={role.role}
@@ -106,7 +128,11 @@ text-[#0668E1]
           </div>
 
           {/* Right Cube Image */}
+<<<<<<< HEAD
           <div className="flex justify-center md:justify-end md:w-[85%]">
+=======
+          <div className="flex justify-center md:justify-end w-full">
+>>>>>>> a058e2410b6512ea713e52c1b3c0f84543a4dcc5
             <Image
               src="/solutions/make-hiring-easy.svg"
               alt="make-hiring-easy"

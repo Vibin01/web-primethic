@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "../components/Header";
 import { Exo_2 } from "next/font/google";
+<<<<<<< HEAD
 import {IBM_Plex_Sans} from "next/font/google";
+=======
+>>>>>>> a058e2410b6512ea713e52c1b3c0f84543a4dcc5
 import Footer from "@/components/Footer";
 import Script from "next/script";
 
@@ -15,6 +18,7 @@ export const metadata: Metadata = {
  icons: {
     icon: "/favicon.jpeg",
   },};
+<<<<<<< HEAD
 
 const exo2 = Exo_2({
   subsets: ["latin"],
@@ -34,6 +38,14 @@ const ibmPlexSans = IBM_Plex_Sans({
 
 
 
+=======
+const exo2 = Exo_2({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+  display: "swap",
+});
+
+>>>>>>> a058e2410b6512ea713e52c1b3c0f84543a4dcc5
 
 export default function RootLayout({
   children,
@@ -59,7 +71,11 @@ export default function RootLayout({
               {/* End Google Tag Manager */}
     </head>
       <body
+<<<<<<< HEAD
         className={`${exo2.variable} ${ibmPlexSans.variable} relative bg-white! `}
+=======
+        className={`${exo2.className} relative bg-white! `}
+>>>>>>> a058e2410b6512ea713e52c1b3c0f84543a4dcc5
       >
          {/* GTM NoScript */}
         <noscript>
