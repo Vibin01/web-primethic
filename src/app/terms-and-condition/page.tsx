@@ -9,17 +9,10 @@ export const metadata = {
 
 export default function page() {
   return (
-<<<<<<< HEAD
     <div className="text-base py-[12%] px-[15%] ">
       <h1 className=" font-bold  mb-xl ">
         <span className="text-h5">
            <span className="text-[#0668E1]">PRIMETHIC</span>
-=======
-    <div className="text-base py-[6%] px-[15%] ">
-      <h1 className=" font-bold  mb-xl ">
-        <span className="text-h5">
-          CONNECT <span className="text-[#0668E1]">EC</span>
->>>>>>> a058e2410b6512ea713e52c1b3c0f84543a4dcc5
         </span>{" "}
         <br /> <span className="text-h2 ">TERMS & CONDITIONS</span>
       </h1>

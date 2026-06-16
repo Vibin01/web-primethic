@@ -3,13 +3,7 @@ import AlignmentCards from "./AlignmentCard";
 export default function HeroSection() {
   return (
     <section className="w-full bg-white">
-<<<<<<< HEAD
       <div className="md:max-w-[80%] mt-[8%]">
-=======
-      <div
-        className="md:max-w-[60%] mt-[8%]"
-      >
->>>>>>> a058e2410b6512ea713e52c1b3c0f84543a4dcc5
         {/* Solutions */}
         <p
           className="font-bold
@@ -32,7 +26,6 @@ export default function HeroSection() {
         </h1>
 
         {/* Description */}
-<<<<<<< HEAD
         <div className="flex justify-between w-full">
           <div className="flex gap-sm">
             <img
@@ -94,37 +87,6 @@ export default function HeroSection() {
 
         {/* Buttons */}
         <AlignmentCards />
-=======
-        <p
-          className="font-medium
-          text-base
-          text-[#1B1C17]
-          md:w-[70%]
-          mb-xs"
-        >
-          Creating clarity in <span className="font-bold">decisions,</span>
-        </p>
-        <p
-          className="font-medium
-          text-base
-          text-[#1B1C17]
-          md:w-[70%]
-          mb-xs"
-        >
-          consistency in <span className="font-bold">execution,</span>
-        </p><p
-          className="font-medium
-          text-base
-          text-[#1B1C17]
-          md:w-[70%]
-          mb-xl"
-        >
-          and predictability in <span className="font-bold">outcomes.</span>
-        </p>
-
-        {/* Buttons */}
-        <AlignmentCards/>
->>>>>>> a058e2410b6512ea713e52c1b3c0f84543a4dcc5
       </div>
     </section>
   );

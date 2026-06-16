@@ -10,19 +10,10 @@ export const metadata = {
 export default function page() {
   return (
     <>
-<<<<<<< HEAD
       <div className="text-base py-[12%] px-[15%]">
         <div className="flex justify-between items-center ">
           <h1 className="font-bold  text-h5 mb-xl ">
                <span className="text-[#0668E1]">PRIMETHIC</span>
-=======
-      <div className="text-base py-[6%] px-[15%]">
-        <div className="flex justify-between items-center ">
-          <h1 className="font-bold  text-h5 mb-xl ">
-            <span className="text-base">
-              CONNECT <span className="text-[#0668E1]">EC</span>
-            </span>{" "}
->>>>>>> a058e2410b6512ea713e52c1b3c0f84543a4dcc5
             <br /> <span className="text-h2">PRIVACY POLICY</span>
           </h1>
           <h2 className="text-xl text-[#505050] space-y-4">

@@ -11,26 +11,16 @@ type AlignmentCardType = {
 
 const cards: AlignmentCardType[] = [
   {
-<<<<<<< HEAD
     title: "Alignment Within",
     badge: "",
-=======
-    title: "Internal Alignment",
-    badge: "(PRIME)",
->>>>>>> a058e2410b6512ea713e52c1b3c0f84543a4dcc5
     align: "left",
     description:[
       "A coherent flow from understanding to action.",
       "Creating clarity, consistency, and reliable outcomes."
  ] },
   {
-<<<<<<< HEAD
     title: "Alignment Across",
     badge: "",
-=======
-    title: "External Validity",
-    badge: "(ETHIC)",
->>>>>>> a058e2410b6512ea713e52c1b3c0f84543a4dcc5
     align: "right",
     description:[
       "Ensuring alignment remains consistent across different systems and contexts.",
