@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
+import { PiArrowsLeftRightBold } from "react-icons/pi";
 import { VscArrowBoth } from "react-icons/vsc";
 
 const acrossRoles = [
@@ -98,7 +99,8 @@ text-[#0668E1]
                   </Link>
 
                   {index < acrossRoles.length - 1 && (
-                    <VscArrowBoth className="size-3 sm:size-iconsize-sm font-medium" />
+                                                        <PiArrowsLeftRightBold  className="size-iconsize-sm scale-105 font-medium text-[#B2D0F6]" />
+              
                   )}
                 </div>
               ))}
@@ -106,7 +108,7 @@ text-[#0668E1]
           </div>
 
           {/* Right Cube Image */}
-          <div className="flex justify-center md:justify-end md:w-[85%]">
+          <div className="flex justify-center md:justify-end md:w-[85%] ">
             <Image
               src="/solutions/make-hiring-easy.svg"
               alt="make-hiring-easy"

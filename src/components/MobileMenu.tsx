@@ -91,42 +91,10 @@ export default function MobileMenu({
               Home
             </Link>
 
-             <button
-               id="mission-button"
-            onClick={() => {
-            handleCloseMenu()
-
-              if (window.location.pathname !== "/") {
-                router.push("/");
-              sessionStorage.setItem("scrollToMission", "true");
-              } else {
-                scrollToSection("mission");
-              }
-            }}
-              className="border-b border-[#E5E5E5] text-left py-md text-base font-medium text-[#1B1C17]"
-            >
-              Vision
-            </button>
-
-            <button
-               id="mission-button"
-            onClick={() => {
-            handleCloseMenu()
-
-              if (window.location.pathname !== "/") {
-                router.push("/");
-              sessionStorage.setItem("scrollToMission", "true");
-              } else {
-                scrollToSection("mission");
-              }
-            }}
-              className="text-left border-b border-[#E5E5E5] py-md text-base font-medium text-[#1B1C17]"
-            >
-              Mission
-            </button>
+      
 
             <Link
-              href="/solutions"
+              href="/alignment-in-hiring-systems"
               onClick={handleCloseMenu}
               className="border-b border-[#E5E5E5] py-md text-base font-medium text-[#1B1C17]"
             >

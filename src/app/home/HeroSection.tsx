@@ -4,17 +4,17 @@ const frameworkItems = [
   {
     icon: "/home/icons/within-individuals-icon.svg",
     title: "Within individuals.",
-    description: "Understanding, decisions, actions aligned.",
+    description: "Expectations, decisions, and actions aligned.",
   },
   {
     icon: "/home/icons/between-teams-icon.svg",
     title: "Between teams.",
-    description: "Direction, execution, coordination aligned.",
+    description: "Shared expectations drive coordinated action.",
   },
   {
     icon: "/home/icons/across-system-icon.svg",
     title: "Across systems.",
-    description: "Alignment remains valid across systems.",
+    description: "Alignment remains consistent as systems interact.",
   },
 ];
 
@@ -27,12 +27,12 @@ const impactItems = [
   {
     icon: "/home/icons/clear-decisions-icon.svg",
     title: "Clear decisions.",
-    description: "Direction remains visible.",
+    description: "The path forward remains visible.",
   },
   {
     icon: "/home/icons/reliable-outcomes-icon.svg",
     title: "Reliable outcomes.",
-    description: "Intent remains aligned with outcome.",
+    description: "Outcomes reflect expectations.",
   },
 ];
 
@@ -41,20 +41,20 @@ export default function HeroSection() {
     <section className=" mt-[15%] pb-[5%]">
       <div className="w-full ">
         {/* Small Heading */}
-        <p className="font-extrabold text-h2  text-[#0668E1] ">
+        <h1 className="font-extrabold text-h2  text-[#0668E1] ">
           Alignment Intelligence
-        </p>
+        </h1>
 
         {/* Main Heading */}
-        <h1 className="font-bold text-h5   md:max-w-[40%] mb-xl ">
+        <h3 className="font-bold text-h5   md:max-w-[40%] mb-xl ">
           We build systems where alignment holds under real-world conditions
-        </h1>
+        </h3>
 
         {/* Framework Section */}
         <div className="mb-md md:mb-xl">
-          <h2 className="font-bold text-h6 text-[#0668E1] mb-sm">
+          <h4 className="font-bold text-h6 text-[#0668E1] mb-sm">
             The Framework
-          </h2>
+          </h4>
 
           <div className="flex flex-col md:flex-row md:items-center gap-md text-[#1B1C17]">
             {frameworkItems.map((item,index) => (
@@ -83,9 +83,9 @@ export default function HeroSection() {
 
         {/* Impact Section */}
         <div className="pt-md">
-          <h2 className="font-bold text-h6 text-[#0668E1] mb-sm">
+          <h4 className="font-bold text-h6 text-[#0668E1] mb-sm">
             The Impact
-          </h2>
+          </h4>
 
           <div className="flex flex-col md:flex-row  gap-md">
             {impactItems.map((item,index) => (

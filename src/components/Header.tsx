@@ -111,7 +111,7 @@ export const Header = () => {
           >
             Mission
           </button> */}
-          <Link  href={"/solutions"} className="hidden md:flex font-medium text-base hover:text-[#0668E1]">Solutions</Link>
+          <Link  href={"/alignment-in-hiring-systems"} className="hidden md:flex font-medium text-base hover:text-[#0668E1]">Solutions</Link>
   <MobileMenu
     isMenuOpen={isMenuOpen}
     setIsMenuOpen={setIsMenuOpen}

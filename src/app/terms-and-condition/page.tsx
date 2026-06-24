@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function page() {
   return (
-    <div className="text-base py-[12%] px-[15%] ">
+    <div className="text-base  py-[25%] md:py-[12%] px-[5%] md:px-[15%] ">
       <h1 className=" font-bold  mb-xl ">
         <span className="text-h5">
            <span className="text-[#0668E1]">PRIMETHIC</span>

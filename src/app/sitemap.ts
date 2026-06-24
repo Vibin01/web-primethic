@@ -10,7 +10,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   priority: 1,
     },
      {
-      url: `${process.env.BASE_URL}/solutions`,
+      url: `${process.env.BASE_URL}/alignment-in-hiring-systems`,
       lastModified: new Date(),
         changeFrequency: "monthly",
   priority: 1,

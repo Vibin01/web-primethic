@@ -15,8 +15,8 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div className="space-y-[5%]">
-      <div className="pt-[20%] pb-[5%] md:py-[10%]  px-[5%] md:px-[8%]">
+     <div className="space-y-[5%]">
+        <div className="pt-[15%] md:pt-0 px-[5%] lg:px-[8%] ">
         <HeroSection />
       </div>
       <div className="pt-[15%] md:pt-0 px-[5%] md:px-[8%]">

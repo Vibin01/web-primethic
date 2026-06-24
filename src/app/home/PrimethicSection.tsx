@@ -8,17 +8,17 @@ const cards = [
       {
         number: "01",
         color: "#589AEB",
-        text: "What you understand shapes what you decide.",
+        text: "Clarity remains connected across transitions.",
       },
       {
         number: "02",
         color: "#0668E1",
-        text: "What you decide shapes what gets done.",
+        text: "Decisions remain aligned as conditions evolve.",
       },
       {
         number: "03",
         color: "#044AA0",
-        text: "What gets done shapes the outcome.",
+        text: "Outcomes remain consistent with intent.",
       },
     ],
     bottomText:
@@ -34,12 +34,12 @@ const cards = [
       {
         number: "01",
         color: "#589AEB",
-        text: "Decisions gradually drift from what was intended.",
+        text: "Clarity becomes fragmented across transitions.",
       },
       {
         number: "02",
         color: "#0668E1",
-        text: "Execution moves in a different direction.",
+        text: "Decisions gradually drift from what was intended.",
       },
       {
         number: "03",
@@ -65,7 +65,7 @@ const cards = [
       {
         number: "02",
         color: "#0668E1",
-        text: "Execution — Translate direction into action consistently.",
+        text: "Consistency — Reduce drift as conditions evolve.",
       },
       {
         number: "03",
@@ -74,7 +74,7 @@ const cards = [
       },
     ],
     bottomText:
-      "So outcomes remain reliable - even as complexity increases.",
+      "So outcomes remain reliable—even as complexity increases.",
   },
 ];
 
@@ -86,7 +86,7 @@ export default function PrimethicSection() {
         {cards.map((card, index) => (
           <div
             key={index}
-            className="w-full bg-white border border-[#D3E6FF] rounded-md p-sm shadow-[0px_4px_40px_5px_rgba(6,104,225,0.10)] flex flex-col"
+            className="w-full bg-white border border-[#D3E6FF] rounded-md p-md md:p-sm shadow-[0px_4px_40px_5px_rgba(6,104,225,0.10)] flex flex-col"
           >
             {/* Icon */}
             <div className="size-iconsize-xl rounded-sm bg-[#E6F0FC]- flex items-center justify-center mb-sm">
@@ -98,9 +98,9 @@ export default function PrimethicSection() {
             </div>
 
             {/* Title */}
-            <h2 className="font-bold text-base text-[#0668E1] uppercase">
+            <h3 className="font-bold text-base text-[#0668E1] uppercase">
               {card.title}
-            </h2>
+            </h3>
 
             {/* Divider */}
             <div className="w-full border-t border-[#D2E5FF] my-sm" />

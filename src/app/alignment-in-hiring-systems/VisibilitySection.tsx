@@ -25,7 +25,7 @@ export default function VisibilitySection() {
           {/* Candidate */}
           <div
             className="w-[clamp(110px,_calc(190_/_var(--width)_*_100vw),480px)] 
-            h-[150px] md:h-[202px]
+             md:h-[202px]
             border border-[#D1E4FE]
             rounded-md
             bg-white
@@ -33,16 +33,18 @@ export default function VisibilitySection() {
             flex flex-col items-center justify-center
             gap-sm
             shadow-[0px_4px_20px_rgba(6,104,225,0.04)]
-            translate-y-[10px] md:translate-y-[20px]
+            translate-y-[20px] md:translate-y-[20px]
             -mr-2 md:-mr-4"
           >
             {/* Icon */}
+<div className="bg-[#F9F9F9] p-1 md:p-xs rounded-full">
 
             <img
               src="/solutions/icons/candidate-icon.svg"
               alt="Candidate"
-              className="size-w-[clamp(60px,_calc(90_/_var(--width)_*_100vw),160px)]  object-contain"
+              className="size-w-[clamp(30px,_calc(90_/_var(--width)_*_100vw),160px)]  object-contain"
             />
+            </div>
 
             {/* Text */}
             <div className="text-center">
@@ -56,16 +58,16 @@ export default function VisibilitySection() {
               <p
                 className="font-medium text-[#1B1C17]
                 text-xl
-                mt-1"
+                mt-1 px-sm"
               >
-                Defining decisions
+                Seek the right opportunity.
               </p>
             </div>
           </div>
 
           {/* Recruiter */}
           <div
-            className="w-[clamp(110px,_calc(190_/_var(--width)_*_100vw),480px)]  h-[150px]
+            className="w-[clamp(110px,_calc(190_/_var(--width)_*_100vw),480px)]  md:h-[150px]
             md:h-[202px]
             border border-[#D1E4FE]
             rounded-md
@@ -77,12 +79,12 @@ export default function VisibilitySection() {
             relative z-10"
           >
             {/* Icon */}
-
+<div className="bg-[#F9F9F9] p-1 md:p-xs rounded-full">
             <img
               src="/solutions/icons/recruiter-icon.svg"
               alt="Recruiter"
-              className="size-w-[clamp(60px,_calc(90_/_var(--width)_*_100vw),160px)]  object-contain"
-            />
+              className="size-w-[clamp(30px,_calc(90_/_var(--width)_*_100vw),160px)]  object-contain"
+            /></div>
 
             {/* Text */}
             <div className="text-center">
@@ -96,16 +98,16 @@ export default function VisibilitySection() {
               <p
                 className="font-medium text-[#1B1C17]
                 text-xl
-                mt-1"
+                mt-1 px-sm"
               >
-                Driving execution
+                Seek successful closure.
               </p>
             </div>
           </div>
 
           {/* Employer */}
           <div
-            className="w-[clamp(110px,_calc(190_/_var(--width)_*_100vw),480px)]  h-[150px]
+            className="w-[clamp(110px,_calc(190_/_var(--width)_*_100vw),480px)]  md:h-[150px]
              md:h-[202px]
             border border-[#D1E4FE]
             rounded-md
@@ -114,16 +116,18 @@ export default function VisibilitySection() {
             flex flex-col items-center justify-center
             gap-sm
             shadow-[0px_4px_20px_rgba(6,104,225,0.04)]
-            translate-y-[10px] md:translate-y-[20px]
+            translate-y-[20px] md:translate-y-[20px]
             -ml-2 md:-ml-4"
           >
             {/* Icon */}
+<div className="bg-[#F9F9F9] p-1 md:p-xs rounded-full">
 
             <img
               src="/solutions/icons/employer-icon.svg"
               alt="Employer"
-              className="size-w-[clamp(60px,_calc(90_/_var(--width)_*_100vw),160px)]  object-contain"
+              className="size-w-[clamp(30px,_calc(90_/_var(--width)_*_100vw),160px)]  object-contain"
             />
+            </div>
 
             {/* Text */}
             <div className="text-center">
@@ -136,100 +140,28 @@ export default function VisibilitySection() {
 
               <p
                 className="font-medium text-[#1B1C17]
-                text-xl mt-1"
+                text-xl mt-1 px-md"
               >
-                Designing direction
+                Seek the right talent.
               </p>
             </div>
           </div>
         </div>
 
-        {/* Divider */}
-        <div
-          className="mt-12 md:mt-14
-          flex items-center justify-center gap-sm"
-        >
-          {/* Left Line */}
-          <div
-            className="hidden md:block
-            w-[30%]
-            border-t border-[#D1E4FE]"
-          />
+       
 
           {/* Text */}
           <p
-            className="font-bold text-[#1B1C17]
+            className="font-medium text-[#1B1C17]
             text-base
-            whitespace-nowrap text-center"
+            text-center my-xl py-xl"
           >
-            When everything is visible:
+            Connect EC creates visibility across all three perspectives.
           </p>
 
-          {/* Right Line */}
-          <div
-            className="hidden md:block
-            w-[30%]
-            border-t border-[#D1E4FE]"
-          />
-        </div>
+       
 
-        {/* Bottom Features */}
-        <div
-          className="mt-xl
-          flex flex-col md:flex-row
-          justify-center  items-center
-          gap-xl "
-        >
-          <div className="flex flex-col md:flex-row gap-xl">
-          {/* Feature 1 */}
-          <div className=" flex items-center gap-sm">
-            
-            <img
-              src={"/solutions/icons/decision-icon.svg"}
-              alt="outcome "
-              className="size-iconsize-xl  scale-[210%]"
-            />
-
-            <p
-              className="font-medium text-[#1B1C17]
-              text-base"
-            >
-              Decisions become faster
-            </p>
-          </div>
-
-          {/* Feature 2 */}
-          <div className="flex items-center gap-sm">
-              <img
-                src={"/solutions/icons/execution-icon.svg"}
-                alt="outcome "
-                className="size-iconsize-xl scale-[210%]"
-              />
-            <p
-              className="font-medium text-[#1B1C17]
-              text-base"
-            >
-              Execution becomes more consistent
-            </p>
-          </div>
-
-          {/* Feature 3 */}
-          <div className="flex items-center gap-sm">
-            <img
-              src={"/solutions/icons/outcome-icon.svg"}
-              alt="outcome "
-              className="size-iconsize-xl  scale-[210%] "
-            />
-
-            <p
-              className="font-medium text-[#1B1C17]
-              text-base"
-            >
-              Outcomes become more predictable
-            </p>
-          </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

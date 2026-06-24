@@ -16,7 +16,7 @@ const cardData = [
   {
     icon: "/solutions/icons/for-recruiter-icon.svg",
     title: "For Recruiters",
-    subtitle: "Execute without fragmentation.",
+    subtitle: "Coordinate without fragmentation.",
     points: [
       "Predict no-shows before they disrupt hiring",
       "Manage interviews, schedules, and panels in one place",
@@ -56,6 +56,7 @@ export default function HiringCardsSection() {
                     height={22}
                     className="object-contain size-iconsize-md mb-sm"
                   />
+                  
               {/* Top */}
               <div className="flex items-start gap-xs">
                 

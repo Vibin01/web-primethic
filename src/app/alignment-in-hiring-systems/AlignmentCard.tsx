@@ -4,6 +4,7 @@ import Link from "next/link";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
 import { IoPersonSharp } from "react-icons/io5";
 import { MdGroups } from "react-icons/md";
+import { PiArrowsLeftRightBold } from "react-icons/pi";
 import { VscArrowBoth } from "react-icons/vsc";
 
 const withinRoles = [
@@ -165,7 +166,8 @@ text-[#0668E1]
               </Link>
 
               {index < acrossRoles.length - 1 && (
-                <VscArrowBoth className="size-iconsize-sm font-medium" />
+                                    <PiArrowsLeftRightBold  className="size-iconsize-sm scale-105 font-medium text-[#B2D0F6]" />
+
               )}
             </div>
           ))}

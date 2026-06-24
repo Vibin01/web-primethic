@@ -2,7 +2,7 @@
 const items = [
   {
     icon: "/solutions/icons/decision.svg",
-    title: "Decisions",
+    title: "Individuals",
   },
   {
     icon: "/solutions/icons/relationship.svg",

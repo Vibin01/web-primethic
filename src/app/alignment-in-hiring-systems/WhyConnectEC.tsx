@@ -51,7 +51,7 @@ export default function WhyConnectEC() {
             ))}
           </div>
 
-          <div className="  md:hidden w-full space-y-sm">
+          <div className="  md:hidden w-full space-y-md md:space-y-sm">
             {[...leftFeatures,...rightFeatures].map((item, index) => (
               <FeatureCard key={index} text={item} />
             ))}
@@ -64,7 +64,7 @@ export default function WhyConnectEC() {
 
 function FeatureCard({ text }: { text: string }) {
   return (
-<div className="w-full  bg-[#FFFFFF] border border-[#D3E6FF] rounded-md p-sm flex items-start gap-xs shadow-[0px_2px_10px_2px_#0668E10D]">
+<div className="w-full  bg-[#FFFFFF] border border-[#D3E6FF] rounded-md p-md md:p-sm flex items-start gap-xs shadow-[0px_2px_10px_2px_#0668E10D]">
       
       {/* Icon */}
       <img src={"/solutions/icons/tick-icon.svg"} alt="tick icon" className="size-iconsize-sm mt-[0.5%] md:mt-0"/>

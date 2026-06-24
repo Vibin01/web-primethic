@@ -1,7 +1,5 @@
 import React from "react";
 import HeroSection from "./HeroSection";
-import { TeamSection } from "./TeamSection";
-import HowItWorks from "./HowItWorkSection";
 import FoundationSection from "./FoundationSection";
 import PrimethicSection from "./PrimethicSection";
 

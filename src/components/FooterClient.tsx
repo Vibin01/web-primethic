@@ -2,7 +2,6 @@
 import {  FaInstagram, FaYoutube, FaMediumM, } from "react-icons/fa";
 import { ImLinkedin2 } from "react-icons/im";
 
-import { FaXTwitter } from "react-icons/fa6";
 
 import Link from "next/link";
 
@@ -63,8 +62,8 @@ export default function FooterClient({ children }: { children: React.ReactNode }
                 </div>
               </div>
               <div className="w-full flex flex-col mt-4 lg:mt-0 pt-3">
-                  <div className="hidden lg:flex flex-col items-end  py-6">
-                    <div className="sm:w-[100%]   border-t border-[#FFFFFF] my-2"></div>
+                  <div className="flex flex-col items-end  md:py-6">
+                    <div className="w-[100%]   border-t border-[#FFFFFF] md:my-2"></div>
                   </div>
 
                   <div className="mt-5 lg:mt-0 flex flex-col lg:flex-row justify-center items-center lg:items-start lg:justify-between ">
@@ -79,7 +78,7 @@ export default function FooterClient({ children }: { children: React.ReactNode }
                   </div>
                 </div>
             </div>
-             <div className="bg-[#FFFFFF1A] -mx-[8%] md:-mx-[5%] flex flex-col items-center justify-center py-[2%]">
+             <div className="bg-[#FFFFFF1A] -mx-[8%] md:-mx-[5%] flex flex-col items-center justify-center py-[4%]">
                   <p className=" text-lg  font-normal flex flex-col justify-center items-center ">
                     <span>
                       <Link href="https://primethic.com/">

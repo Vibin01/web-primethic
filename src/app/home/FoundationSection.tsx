@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import { useEffect } from "react";
 
@@ -14,36 +14,36 @@ const cards: AlignmentCardType[] = [
     title: "Alignment Within",
     badge: "",
     align: "left",
-    description:[
-      "A coherent flow from understanding to action.",
-      "Creating clarity, consistency, and reliable outcomes."
- ] },
+    description: [
+      "Creating coherence between expectations, decisions, and actions.",
+      "So what is intended remains aligned throughout.",
+    ],
+  },
   {
     title: "Alignment Across",
     badge: "",
     align: "right",
-    description:[
-      "Ensuring alignment remains consistent across different systems and contexts.",
-      "So what holds within continues to hold across."
- ] },
+    description: [
+      "Ensuring alignment remains consistent across systems and contexts.",
+      "So what holds within continues to hold across.",
+    ],
+  },
 ];
 
-
 const items = [
-    {
-          icon: "/home/icons/within-individuals-icon.svg",
-      title: "Within individuals.",
-    },
-    {
+  {
+    icon: "/home/icons/within-individuals-icon.svg",
+    title: "Within individuals.",
+  },
+  {
     icon: "/home/icons/between-teams-icon.svg",
-      title: "Between teams.",
-    },
-    {
-       icon: "/home/icons/across-system-icon.svg",
-      title: "Across systems.",
-    },
-  ];
-
+    title: "Between teams.",
+  },
+  {
+    icon: "/home/icons/across-system-icon.svg",
+    title: "Across systems.",
+  },
+];
 
 function AlignmentMobile({ cards }: { cards: AlignmentCardType[] }) {
   return (
@@ -89,10 +89,8 @@ function AlignmentMobile({ cards }: { cards: AlignmentCardType[] }) {
             {cards[0].title}{" "}
             <span className="text-[#0A67E8]">{cards[0].badge}</span>
           </h2>
-{cards[0].description.map((text)=>(
-          <p className="my-1 text-base ">
-            {text}
-          </p>
+          {cards[0].description.map((text) => (
+            <p className="my-1 text-base font-medium">{text}</p>
           ))}
         </div>
       </div>
@@ -100,7 +98,11 @@ function AlignmentMobile({ cards }: { cards: AlignmentCardType[] }) {
       {/* CENTER ICON */}
       <div className="relative z-10 flex justify-center -mt-8 -mb-8">
         <div className="w-[72px] h-[72px] rounded-2xl">
-          <img src="/home/icons/primethic-icon.svg" alt="logo" className="w-[70px] h-[70px] scale-125" />
+          <img
+            src="/home/icons/primethic-icon.svg"
+            alt="logo"
+            className="w-[70px] h-[70px] scale-125"
+          />
         </div>
       </div>
 
@@ -109,8 +111,8 @@ function AlignmentMobile({ cards }: { cards: AlignmentCardType[] }) {
         <svg viewBox="0 0 400 220" className="w-full h-auto rotate-180">
           <defs>
             <linearGradient id="mobileBorder2" x1="1" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#FFFFFF"  />
-              <stop offset="100%" stopColor="#A5D4FF"  />
+              <stop offset="0%" stopColor="#FFFFFF" />
+              <stop offset="100%" stopColor="#A5D4FF" />
             </linearGradient>
 
             <linearGradient id="mobileBg2" x1="0" y1="0" x2="1" y2="1">
@@ -137,7 +139,6 @@ function AlignmentMobile({ cards }: { cards: AlignmentCardType[] }) {
             fill="url(#mobileBg2)"
             stroke="url(#mobileBorder2)"
             strokeWidth="2"
-            
           />
         </svg>
 
@@ -148,11 +149,9 @@ function AlignmentMobile({ cards }: { cards: AlignmentCardType[] }) {
               <span className="text-[#0A67E8]">{cards[1].badge}</span>
             </h2>
 
-            {cards[0].description.map((text)=>(
-          <p className="my-1 text-base ">
-            {text}
-          </p>
-          ))}
+            {cards[0].description.map((text) => (
+              <p className="my-1 text-base font-medium">{text}</p>
+            ))}
           </div>
         </div>
       </div>
@@ -212,36 +211,37 @@ function AlignmentCard({ item }: { item: AlignmentCardType }) {
       <div
         className={`absolute inset-0 p-md flex flex-col justify-center ${isLeft ? "items-start" : "items-end"}`}
       >
-        <h2
+        <h3
           className={`font-bold text-base ${isLeft ? "text-left" : "text-right"}`}
         >
           {item.title} <span className="text-[#0A67E8]">{item.badge}</span>
-        </h2>
-{item.description.map((text)=>(
-        <p
-          className={`mt-3 text-xl md:w-[80%] ${isLeft ? "text-left " : "text-right"}`}
-        >
-          {text}
-        </p>
+        </h3>
+        {item.description.map((text) => (
+          <p
+            className={`mt-3 text-xl font-medium md:w-[80%] ${isLeft ? "text-left " : "text-right"}`}
+          >
+            {text}
+          </p>
         ))}
       </div>
     </div>
   );
 }
 export default function FoundationSection() {
-      useEffect(() => {
-      const shouldScroll = sessionStorage.getItem("scrollToMission");
-      if (shouldScroll === "true") {
-        sessionStorage.removeItem("scrollToMission");
-        const teamSection = document.getElementById("mission");
-        teamSection?.scrollIntoView({ behavior: "smooth" });
-      }
-    }, []);
+  useEffect(() => {
+    const shouldScroll = sessionStorage.getItem("scrollToMission");
+    if (shouldScroll === "true") {
+      sessionStorage.removeItem("scrollToMission");
+      const teamSection = document.getElementById("mission");
+      teamSection?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
   return (
     <section className="w-full">
-      
-        <h2 className="font-extrabold text-h2 text-[#1B1C17] text-center mb-md">Foundation</h2>
-<div className="md:p-md md:bg-[#FFFFFF] md:rounded-xl md:shadow-[0px_4px_40px_5px_#0668E11A]">
+      <h2 className="font-extrabold text-h2 text-[#1B1C17] text-center mb-md">
+        Foundation
+      </h2>
+      <div className=" md:p-md md:bg-[#FFFFFF] md:rounded-xl md:shadow-[0px_4px_40px_5px_#0668E11A]">
         <h3 className="mb-md text-h5 text-center text-base font-bold text-[#0668E1]">
           Our approach is built on two essentials:
         </h3>
@@ -251,69 +251,56 @@ export default function FoundationSection() {
           {cards.map((item, index) => (
             <AlignmentCard key={index} item={item} />
           ))}
-          <img src={"/home/icons/primethic-icon.svg"} alt="primethic" className="hidden md:block size-[clamp(80px,_calc(150_/_var(--width)_*_100vw),300px)] absolute left-1/2 -translate-x-1/2 object-cover" />
+          <img
+            src={"/home/icons/primethic-icon.svg"}
+            alt="primethic"
+            className="hidden md:block size-[clamp(80px,_calc(150_/_var(--width)_*_100vw),300px)] absolute left-1/2 -translate-x-1/2 object-cover"
+          />
         </div>
 
-        <AlignmentMobile cards={cards}/>
-
-        {/* BOTTOM TEXT */}
-         <section className="flex flex-col items-center py-xl">
-      
-
-      <h3 className="text-h4 font-bold text-[#1B1C17] mb-md">
-        Alignment That Holds
-      </h3>
-
-      <div className="flex flex-col sm:flex-row w-full sm:w-auto gap-md sm:gap-0  sm:items-center sm:justify-center">
-        {items.map((item, index) => {
-
-          return (
-            <div key={item.title} className="flex items-center">
-              <div className="flex items-center gap-xs sm:px-xl">
-                <img src={item.icon} alt={item.title} className="size-iconsize-sm" />
-                <span className="text-base font-medium text-[#1B1C17]">
-                  {item.title}
-                </span>
-              </div>
-
-              {index < items.length - 1 && (
-                <div className="hidden md:flex h-iconsize-sm w-px bg-[#D3E6FF]" />
-              )}
-            </div>
-          );
-        })}
+        <AlignmentMobile cards={cards} />
       </div>
-    </section>
-</div>
-        {/* VISION & MISSION */}
-        <div id="vision" className="grid grid-cols-1 md:grid-cols-2 gap-md mt-xl">
-          {/* Vision */}
-          <div className="rounded-md border border-[#B4D5FF] bg-white shadow-[0px_4px_40px_5px_#0668E11A] p-sm">
-              <img src="/home/icons/vision-icon.svg" alt="vision icon" className="size-iconsize-xl" />
+      {/* VISION & MISSION */}
+      <div id="vision" className="pt-xl grid grid-cols-1 md:grid-cols-2 gap-md mt-xl">
+        {/* Vision */}
+        <div className="rounded-md border border-[#B4D5FF] bg-white shadow-[0px_4px_40px_5px_#0668E11A] p-sm">
+          <img
+            src="/home/icons/vision-icon.svg"
+            alt="vision icon"
+            className="size-iconsize-xl"
+          />
 
-            <h3 className="mt-sm font-extrabold text-h2 text-[#1B1C17]">
-              Vision
-            </h3>
+          <h2 className="mt-sm font-extrabold text-h2 text-[#1B1C17]">
+            Vision
+          </h2>
 
-            <p className="mt-sm text-base text-[#1B1C17]">
-              To unify individuals, teams, and systems through continuity, coherence, and alignment.
-            </p>
-          </div>
-
-          {/* Mission */}
-           <div id="mission" className="rounded-md border border-[#B4D5FF] bg-white shadow-[0px_4px_40px_5px_#0668E11A] p-sm">
-              <img src="/home/icons/mission-icon.svg" alt="vision icon" className="size-iconsize-xl" />
-
-            <h3 className="mt-sm font-extrabold text-h2 text-[#1B1C17]">
-              Mission
-            </h3>
-
-            <p className="mt-sm text-base text-[#1B1C17]">
-              To bridge the gap between aspiration and achievement through alignment that sustains under real-world conditions.
-            </p>
-          </div>
+          <p className="mt-sm text-base font-medium text-[#1B1C17]">
+            To unify individuals, teams, and systems through continuity,
+            coherence, and alignment.
+          </p>
         </div>
-      
+
+        {/* Mission */}
+        <div
+          id="mission"
+          className="rounded-md border border-[#B4D5FF] bg-white shadow-[0px_4px_40px_5px_#0668E11A] p-sm"
+        >
+          <img
+            src="/home/icons/mission-icon.svg"
+            alt="vision icon"
+            className="size-iconsize-xl"
+          />
+
+          <h2 className="mt-sm font-extrabold text-h2 text-[#1B1C17]">
+            Mission
+          </h2>
+
+          <p className="mt-sm text-base font-medium text-[#1B1C17]">
+            To bridge the gap between aspiration and achievement through
+            alignment that sustains under real-world conditions.
+          </p>
+        </div>
+      </div>
     </section>
   );
 }

@@ -2,8 +2,8 @@ import AlignmentCards from "./AlignmentCard";
 
 export default function HeroSection() {
   return (
-    <section className="w-full bg-white">
-      <div className="md:max-w-[80%] mt-[8%]">
+    <section className="w-full bg-white mt-[15%] pb-[5%]">
+      <div className="md:max-w-[80%] ">
         {/* Solutions */}
         <p
           className="font-bold
@@ -22,11 +22,11 @@ export default function HeroSection() {
         >
           Systems where alignment holds
           <br />
-          from decision to outcome
+          across the hiring journey.
         </h1>
 
         {/* Description */}
-        <div className="flex flex-col md:flex-row gap-sm justify-between w-full">
+        <div className="flex flex-col md:flex-row gap-xl justify-between w-full mb-xl">
           <div className="flex gap-sm">
             <img
               src="/solutions/icons/tick-icon.svg"
@@ -43,7 +43,8 @@ export default function HeroSection() {
           
           mb-xs"
             >
-              Creating clarity in <span className="font-bold">decisions,</span>
+              <span className="font-bold">Clarity</span> Make informed
+              decisions.
             </p>
           </div>
           <div className="flex gap-sm">
@@ -61,7 +62,7 @@ export default function HeroSection() {
 
           mb-xs"
             >
-              consistency in <span className="font-bold">execution,</span>
+              <span className="font-bold"> Continuity </span> Stay aligned.
             </p>
           </div>
           <div className="flex gap-sm">
@@ -78,9 +79,9 @@ export default function HeroSection() {
           mb-xl
           text-nowrap
           "
-          
             >
-              and predictability in <span className="font-bold">outcomes.</span>
+              <span className="font-bold"> Predictability</span> Achieve
+              reliable outcomes.
             </p>
           </div>
         </div>
