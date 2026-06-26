@@ -68,7 +68,7 @@ export default function HeroSection() {
                   <p className="font-medium text-base text-[#1B1C17] mb-1">
                     {item.title}
                   </p>
-                  <p className="text-xl text-[#727272]">{item.description}</p>
+                  <p className="text-xl font-medium text-[#727272]">{item.description}</p>
                 </div>
               </div>
             
@@ -99,7 +99,7 @@ export default function HeroSection() {
                   <p className="font-medium text-base text-[#1B1C17] mb-1">
                     {item.title}
                   </p>
-                  <p className="text-xl text-[#727272]">{item.description}</p>
+                  <p className="text-xl font-medium text-[#727272]">{item.description}</p>
                 </div>
               </div>
             

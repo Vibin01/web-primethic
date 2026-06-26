@@ -15,11 +15,13 @@ export default function FooterClient({ children }: { children: React.ReactNode }
               <div className=" w-[100%]  flex flex-col lg:flex-row justify-center  md:justify-between  lg:items-end gap-6">
                 <div className=" mt-7 lg:mt-0  mb-2 lg:mb-0">
                   <div className="flex justify-start ">
+                 <h2>
                     <Link href={"https://connectec.app/"} className=" flex items-center gap-2 lg:text-[40px] font-semibold mb-4">
 <img src="/logo/primethic-logo-white.svg" alt="Primethic Logo" className="w-7 h-7 lg:w-10 lg:h-10 xl:h-12 xl:w-12"/>
                     
                     PRIMETHIC
                     </Link>
+                    </h2>
                   </div>
 
                   <p className="mt-4 text-[14px] xl:text-[20px] 2xl:text-[20px]  lg:font-medium">

@@ -44,9 +44,9 @@ const acrossRoles = [
 
 export default function AlignmentCards() {
   return (
-    <div className="grid  md:grid-cols-[1fr_auto_1fr] gap-xl ">
+    <div className="grid  lg:grid-cols-[1fr_auto_1fr] gap-xl pr-xl sm:pr-0 ">
       {/* ALIGNMENT WITHIN */}
-      <div className="pr-xl">
+      <div>
         <div className="mb-md flex items-center">
           <h3 className="flex items-center text-base font-bold uppercase gap-sm">
             <IoPersonSharp
@@ -107,14 +107,15 @@ text-[#0668E1]
           ))}
         </div>
       </div>
-      <div className=" bg-[#DEEDFF] w-full md:w-[2px] h-[2px] md:h-full " />
+      <div className=" bg-[#DEEDFF] sm:w-[50%] md:w-[2px] h-[2px] md:h-full " />
       {/* ALIGNMENT ACROSS */}
-      <div>
+      <div  className="">
         <div className="mb-md flex items-center">
-          <h3 className="flex items-center text-base font-bold uppercase gap-sm">
+          <h3 className=" pr-md  flex items-center text-base font-bold uppercase gap-sm">
             <MdGroups
               className="
                   size-iconsize-sm 
+                  
                   "
             />
             Experience Alignment Across Hiring

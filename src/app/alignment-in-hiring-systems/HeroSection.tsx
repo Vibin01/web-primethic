@@ -26,12 +26,12 @@ export default function HeroSection() {
         </h1>
 
         {/* Description */}
-        <div className="flex flex-col md:flex-row gap-xl justify-between w-full mb-xl">
-          <div className="flex gap-sm">
+        <div className="flex flex-col md:flex-row gap-sm md:gap-xl justify-between w-full mb-xl pb-xl">
+          <div className="flex items-center gap-sm">
             <img
               src="/solutions/icons/tick-icon.svg"
               alt="tickicon"
-              className="size-iconsize-sm"
+              className="size-iconsize-sm "
             />
 
             <p
@@ -41,13 +41,13 @@ export default function HeroSection() {
           
           text-nowrap
           
-          mb-xs"
+          "
             >
               <span className="font-bold">Clarity</span> Make informed
               decisions.
             </p>
           </div>
-          <div className="flex gap-sm">
+          <div className="flex items-center gap-sm">
             <img
               src="/solutions/icons/tick-icon.svg"
               alt="tickicon"
@@ -65,7 +65,7 @@ export default function HeroSection() {
               <span className="font-bold"> Continuity </span> Stay aligned.
             </p>
           </div>
-          <div className="flex gap-sm">
+          <div className="flex items-center gap-sm">
             <img
               src="/solutions/icons/tick-icon.svg"
               alt="tickicon"
@@ -76,7 +76,7 @@ export default function HeroSection() {
           text-base
           text-[#1B1C17]
           
-          mb-xl
+          
           text-nowrap
           "
             >

@@ -85,12 +85,12 @@ function AlignmentMobile({ cards }: { cards: AlignmentCardType[] }) {
         </svg>
 
         <div className="absolute inset-0 mb-xl p-[10%] flex flex-col justify-center text-left">
-          <h2 className="font-bold text-h5">
+          <h3 className="font-bold text-h5 mb-xs">
             {cards[0].title}{" "}
             <span className="text-[#0A67E8]">{cards[0].badge}</span>
-          </h2>
+          </h3>
           {cards[0].description.map((text) => (
-            <p className="my-1 text-base font-medium">{text}</p>
+            <p className="my-1 text-xl font-medium">{text}</p>
           ))}
         </div>
       </div>
@@ -144,13 +144,13 @@ function AlignmentMobile({ cards }: { cards: AlignmentCardType[] }) {
 
         <div className="absolute inset-0 p-[10%] mt-xl flex flex-col justify-center text-right rotate-180">
           <div className="rotate-180 pt-xl">
-            <h2 className="font-bold text-h5">
+            <h3 className="font-bold text-h5 pb-xs">
               {cards[1].title}{" "}
               <span className="text-[#0A67E8]">{cards[1].badge}</span>
-            </h2>
+            </h3>
 
             {cards[0].description.map((text) => (
-              <p className="my-1 text-base font-medium">{text}</p>
+              <p className="my-1 text-xl font-medium">{text}</p>
             ))}
           </div>
         </div>
