@@ -4,35 +4,35 @@ const frameworkItems = [
   {
     icon: "/home/icons/within-individuals-icon.svg",
     title: "Within individuals.",
-    description: "Expectations, decisions, and actions aligned.",
+    description: "Understanding, intention, and action remain coherent.",
   },
   {
     icon: "/home/icons/between-teams-icon.svg",
     title: "Between teams.",
-    description: "Shared expectations drive coordinated action.",
+    description: "Shared understanding enables coordinated action.",
   },
   {
     icon: "/home/icons/across-system-icon.svg",
     title: "Across systems.",
-    description: "Alignment remains consistent as systems interact.",
+    description: "Alignment continues as systems and contexts interact.",
   },
 ];
 
 const impactItems = [
   {
     icon: "/home/icons/seamless-experiences-icon.svg",
-    title: "Seamless experiences.",
-    description: "Transitions remain connected.",
+    title: "Seamless Experiences",
+    description: "Transitions remain connected as conditions change.",
   },
   {
     icon: "/home/icons/clear-decisions-icon.svg",
-    title: "Clear decisions.",
-    description: "The path forward remains visible.",
+    title: "Clear Decisions",
+    description: "The path forward remains visible when conditions shift.",
   },
   {
     icon: "/home/icons/reliable-outcomes-icon.svg",
-    title: "Reliable outcomes.",
-    description: "Outcomes reflect expectations.",
+    title: "Reliable Outcomes",
+    description: "Outcomes remain connected to intent through change.",
   },
 ];
 
@@ -47,7 +47,7 @@ export default function HeroSection() {
 
         {/* Main Heading */}
         <h3 className="font-bold text-h5   md:max-w-[40%] mb-xl ">
-          We build systems where alignment holds under real-world conditions
+          We build systems where alignment holds under real-world conditions.
         </h3>
 
         {/* Framework Section */}

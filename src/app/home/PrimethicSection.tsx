@@ -2,34 +2,32 @@ const cards = [
   {
     title: "WHY ALIGNMENT",
     icon: "/home/icons/why-alignment-icon.svg",
-    topText: "When continuity holds, alignment becomes sustainable.",
+    topText: "Alignment preserves continuity as conditions change.",
     subtitle: "Continuity in Action",
     items: [
       {
         number: "01",
         color: "#589AEB",
-        text: "Clarity remains connected across transitions.",
+        text: "Understanding carries across transitions.",
       },
       {
         number: "02",
         color: "#0668E1",
-        text: "Decisions remain aligned as conditions evolve.",
+        text: "Decisions remain coherent through change.",
       },
       {
         number: "03",
         color: "#044AA0",
-        text: "Outcomes remain consistent with intent.",
+        text: "Actions remain connected to intent.",
       },
     ],
-    bottomText:
-      "Alignment holds when continuity is preserved across each transition.",
+    bottomText: "Alignment preserves continuity across every transition.",
   },
   {
     title: "THE REALITY",
     icon: "/home/icons/the-reality-icon.svg",
-    topText:
-      "As systems grow and interact, continuity becomes harder to maintain.",
-    subtitle: "When Continuity Weakens",
+    topText: "Continuity becomes harder to maintain as conditions change.",
+    subtitle: "When Alignment Weakens",
     items: [
       {
         number: "01",
@@ -39,42 +37,51 @@ const cards = [
       {
         number: "02",
         color: "#0668E1",
-        text: "Decisions gradually drift from what was intended.",
+        text: "Decisions drift from what was intended.",
       },
       {
         number: "03",
         color: "#044AA0",
-        text: "Outcomes become increasingly difficult to predict.",
+        text: "Actions diverge and outcomes become less predictable.",
       },
     ],
-    bottomText:
-      "Not because capability is absent. But continuity weakens across transitions.",
+    bottomText: "Alignment can weaken even when capability remains.",
   },
   {
     title: "PRIMETHIC",
     icon: "/home/icons/primethic-box-icon.svg",
-    topText:
-      "We ensure alignment holds consistently under real-world conditions.",
-    subtitle: "We Design Systems That Preserve",
+    topText: "We design systems that help alignment hold through change.",
+    subtitle: "Systems That Preserve Alignment",
     items: [
       {
         number: "01",
         color: "#589AEB",
-        text: "Continuity — Preserve intent across transitions.",
+        text: (
+          <>
+            <span className="font-bold">Continuity</span> - Keep intent connected across transitions.
+          </>
+        ),
       },
       {
         number: "02",
         color: "#0668E1",
-        text: "Consistency — Reduce drift as conditions evolve.",
+        text: (
+          <>
+            <span className="font-bold">Coherence</span> - Keep understanding, intention, and action aligned.
+          </>
+        ),
       },
       {
         number: "03",
         color: "#044AA0",
-        text: "Alignment — Keep outcomes consistently aligned with aspiration.",
+        text: (
+          <>
+            <span className="font-bold">Coordination</span> - Keep individuals, teams, and systems moving together.
+          </>
+        ),
       },
     ],
-    bottomText:
-      "So outcomes remain reliable—even as complexity increases.",
+    bottomText: "Alignment keeps outcomes connected to aspiration.",
   },
 ];
 

@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "../components/Header";
-import { Exo_2 } from "next/font/google";
+import { Exo_2, Geist } from "next/font/google";
 import {IBM_Plex_Sans} from "next/font/google";
 import Footer from "@/components/Footer";
 import Script from "next/script";
+import { Toaster } from "sonner";
+import { cn } from "@/lib/utils";
 
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.BASE_URl || "https://primethic.com"),
@@ -41,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={cn("font-sans", geist.variable)}>
           <head>
        {/* Google Tag Manager */}
               <Script
@@ -61,6 +64,12 @@ export default function RootLayout({
       <body
         className={`${exo2.variable} ${ibmPlexSans.variable} relative bg-white! `}
       >
+        <Toaster
+          position="top-right"
+          richColors
+          closeButton
+          expand={false}
+        />
          {/* GTM NoScript */}
         <noscript>
           <iframe

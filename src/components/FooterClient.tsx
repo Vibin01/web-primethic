@@ -25,7 +25,7 @@ export default function FooterClient({ children }: { children: React.ReactNode }
                   </div>
 
                   <p className="mt-4 text-[14px] xl:text-[20px] 2xl:text-[20px]  lg:font-medium">
-                    Phone : +91 9499045981
+                    Phone : +91 9499045851
                   </p>
                   <p className="mt-1 lg:mt-2 text-[14px] xl:text-[20px] 2xl:text-[20px]  lg:font-medium">
                     Email : hello@connectec.app

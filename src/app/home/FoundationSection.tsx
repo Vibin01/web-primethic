@@ -15,8 +15,8 @@ const cards: AlignmentCardType[] = [
     badge: "",
     align: "left",
     description: [
-      "Creating coherence between expectations, decisions, and actions.",
-      "So what is intended remains aligned throughout.",
+      "Creating coherence between understanding, intention, and action.",
+      "So internal direction remains coherent through change.",
     ],
   },
   {
@@ -24,8 +24,8 @@ const cards: AlignmentCardType[] = [
     badge: "",
     align: "right",
     description: [
-      "Ensuring alignment remains consistent across systems and contexts.",
-      "So what holds within continues to hold across.",
+      "Creating coordination across individuals, teams, systems, and contexts.",
+      "So what remains aligned within can remain coordinated across interactions.",
     ],
   },
 ];
@@ -89,8 +89,8 @@ function AlignmentMobile({ cards }: { cards: AlignmentCardType[] }) {
             {cards[0].title}{" "}
             <span className="text-[#0A67E8]">{cards[0].badge}</span>
           </h3>
-          {cards[0].description.map((text) => (
-            <p className="my-1 text-xl font-medium">{text}</p>
+          {cards[0].description.map((text, index) => (
+            <p key={index} className="my-1 text-xl font-medium">{text}</p>
           ))}
         </div>
       </div>
@@ -149,8 +149,8 @@ function AlignmentMobile({ cards }: { cards: AlignmentCardType[] }) {
               <span className="text-[#0A67E8]">{cards[1].badge}</span>
             </h3>
 
-            {cards[0].description.map((text) => (
-              <p className="my-1 text-xl font-medium">{text}</p>
+            {cards[1].description.map((text, index) => (
+              <p key={index} className="my-1 text-xl font-medium">{text}</p>
             ))}
           </div>
         </div>
@@ -216,8 +216,9 @@ function AlignmentCard({ item }: { item: AlignmentCardType }) {
         >
           {item.title} <span className="text-[#0A67E8]">{item.badge}</span>
         </h3>
-        {item.description.map((text) => (
+        {item.description.map((text, index) => (
           <p
+            key={index}
             className={`mt-3 text-xl font-medium md:w-[80%] ${isLeft ? "text-left " : "text-right"}`}
           >
             {text}
@@ -275,8 +276,8 @@ export default function FoundationSection() {
           </h2>
 
           <p className="mt-sm text-base font-medium text-[#1B1C17]">
-            To unify individuals, teams, and systems through continuity,
-            coherence, and alignment.
+            A world where individuals, teams, and systems remain aligned through
+            continuity, coherence, and coordination.
           </p>
         </div>
 
@@ -296,8 +297,8 @@ export default function FoundationSection() {
           </h2>
 
           <p className="mt-sm text-base font-medium text-[#1B1C17]">
-            To bridge the gap between aspiration and achievement through
-            alignment that sustains under real-world conditions.
+            To bridge aspiration and achievement by building systems that
+            preserve alignment through change.
           </p>
         </div>
       </div>
