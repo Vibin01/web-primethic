@@ -16,7 +16,7 @@ export default function WhyConnectECExistsSection() {
       </p>
 
       {/* Main Heading */}
-      <h2 className="font-heading font-extrabold text-h2 leading-tight mb-md">
+      <h2 className="font-extrabold text-h2 leading-tight mb-md">
         <span className="text-[#1B1C17] block">Systems Should Not Expect</span>
         <span className="text-[#1B1C17] block">People to Remain Fixed.</span>
         <span className="text-primary block mt-xs">They Should Be Designed to</span>
@@ -43,7 +43,7 @@ export default function WhyConnectECExistsSection() {
       {/* Bottom Footer Row */}
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-md">
         <div>
-          <h3 className="font-heading font-bold text-h5 text-[#1B1C17]">
+          <h3 className="font-bold text-h5 text-[#1B1C17]">
             PRIMETHIC.
           </h3>
           <p className="font-medium text-base text-[#1B1C17] mt-xs">
@@ -52,7 +52,7 @@ export default function WhyConnectECExistsSection() {
         </div>
 
         <div>
-          <GradientButton text="Explore Connect EC" className="px-xl" />
+          <GradientButton text="Explore Connect EC" className="!px-20" link="https://connectec.app/" />
         </div>
       </div>
     </section>

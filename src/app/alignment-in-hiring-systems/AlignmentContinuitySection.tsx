@@ -54,9 +54,9 @@ export default function AlignmentContinuitySection() {
           </p>
 
           {/* Heading */}
-          <h2 className="font-heading font-extrabold text-h2  leading-tight mb-xs">
+          <h2 className="font-extrabold text-h2  leading-tight mb-xs">
             <span className="text-[#1B1C17] block">See What the Recorded</span>
-            <span className="text-primary block">Stage Cannot Show.</span>
+            <span className=" block">Stage Cannot Show.</span>
           </h2>
 
           {/* Intro Description */}
@@ -98,7 +98,7 @@ export default function AlignmentContinuitySection() {
               Connect EC does not replace human judgement. It gives human judgement earlier visibility, clearer direction and greater intervention time.
             </p>
 
-            <GradientButton text="Experience Connect EC" className="px-xl" />
+            <GradientButton text="Experience Connect EC" className="!px-20" link="https://connectec.app/" />
           </div>
         </div>
 

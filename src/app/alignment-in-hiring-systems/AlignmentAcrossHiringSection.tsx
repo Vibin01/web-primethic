@@ -2,12 +2,13 @@ import React from "react";
 
 const actorCards = [
   {
-    avatar: "/solutions/icons/candidate-icon.svg",
-    title: "Career Progress",
+    avatar: "/solutions/icons/employer-icon.svg",
+    title: "Hiring Targets",
     description:
-      "Keep expectations, decisions and actions connected as opportunities change.",
+      "Keep priorities, capacity, execution and outcomes connected to operating reality.",
     isElevated: false,
   },
+
   {
     avatar: "/solutions/icons/recruiter-icon.svg",
     title: "Hiring Delivery",
@@ -16,12 +17,13 @@ const actorCards = [
     isElevated: true,
   },
   {
-    avatar: "/solutions/icons/employer-icon.svg",
-    title: "Hiring Targets",
+    avatar: "/solutions/icons/candidate-icon.svg",
+    title: "Career Progress",
     description:
-      "Keep priorities, capacity, execution and outcomes connected to operating reality.",
+      "Keep expectations, decisions and actions connected as opportunities change.",
     isElevated: false,
   },
+
 ];
 
 export default function AlignmentAcrossHiringSection() {
@@ -35,7 +37,7 @@ export default function AlignmentAcrossHiringSection() {
             ALIGNMENT ACROSS HIRING
           </p>
 
-          <h2 className="font-heading font-extrabold text-h2 leading-tight">
+          <h2 className="font-extrabold text-h2 leading-tight">
             <span className="text-[#1B1C17] block">Three Actors. Three Goals. </span>
             <span className="text-primary block">One Connected System.</span>
           </h2>
@@ -59,7 +61,7 @@ export default function AlignmentAcrossHiringSection() {
               />
 
               {/* Title */}
-              <h3 className="font-heading font-bold text-h5 text-primary mb-xs">
+              <h3 className="font-bold text-h5 text-primary mb-xs">
                 {card.title}
               </h3>
 

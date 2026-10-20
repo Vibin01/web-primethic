@@ -23,7 +23,7 @@ export default function HeroSection() {
           </p>
 
           {/* Main Heading */}
-          <h1 className="font-heading font-extrabold text-primary text-h2 leading-tight mb-md">
+          <h1 className="font-extrabold text-primary text-h2 leading-tight mb-md">
             Hiring Keeps Moving.
             <br />
             Alignment Does Not Always
@@ -42,7 +42,7 @@ export default function HeroSection() {
           </p>
 
           {/* CTA Button */}
-          <GradientButton text="Explore Connect EC " className="px-xl" />
+          <GradientButton text="Explore Connect EC" className="!px-20" link="https://connectec.app/" />
         </div>
 
         {/* Right Column: Status Card */}

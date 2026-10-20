@@ -28,7 +28,7 @@ export default function WhatAlignmentChangesSection() {
       </p>
 
       {/* Heading */}
-      <h2 className="font-heading font-extrabold text-h2 leading-tight mb-xs">
+      <h2 className="font-extrabold text-h2 leading-tight mb-xs">
         <span className="text-[#1B1C17]">From Recorded Progress to </span>
         <span className="text-primary">Connected Progress.</span>
       </h2>

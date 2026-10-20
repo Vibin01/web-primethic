@@ -30,10 +30,10 @@ export default function SystemProblemsSection() {
       {/* Header */}
       <div className="mb-md md:mb-lg">
         <p className="font-bold text-base text-primary uppercase tracking-wide mb-xs">
-          THE SYSTEM PROBLEMS
+          THE SYSTEMs PROBLEM
         </p>
 
-        <h2 className="font-heading font-extrabold text-h2 leading-tight">
+        <h2 className="font-extrabold text-h2 leading-tight">
           <span className="text-[#1B1C17] block">The Process Can Continue.</span>
           <span className="text-primary block">The Connection Can Weaken.</span>
         </h2>
@@ -58,7 +58,7 @@ export default function SystemProblemsSection() {
               </div>
 
               {/* Title */}
-              <h3 className="font-heading font-bold text-h6 text-[#1B1C17] mb-sm">
+              <h3 className="font-bold text-h6 text-[#1B1C17] mb-sm">
                 {card.title}
               </h3>
             </div>

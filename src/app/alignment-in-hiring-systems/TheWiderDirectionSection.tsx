@@ -9,7 +9,7 @@ export default function TheWiderDirectionSection() {
       </p>
 
       {/* Main Heading */}
-      <h2 className="font-heading font-extrabold text-h2 leading-tight mb-sm md:mb-md">
+      <h2 className="font-extrabold text-h2 leading-tight mb-sm md:mb-md">
         <span className="text-[#1B1C17] block">Hiring Is the First Application.</span>
         <span className="text-primary block">Alignment Continuity Goes Further.</span>
       </h2>

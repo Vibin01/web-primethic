@@ -40,7 +40,7 @@ export default function PrimethicResponseSection() {
           </p>
 
           {/* Main Heading */}
-          <h2 className="font-heading font-extrabold text-white text-h2 leading-tight mb-sm">
+          <h2 className="font-extrabold text-white text-h2 leading-tight mb-sm">
             Design for Change.
             <br />
             Not Only for Process.
@@ -108,7 +108,7 @@ export default function PrimethicResponseSection() {
 
               {/* Text content */}
               <div>
-                <h3 className="font-heading font-bold text-base text-primary">
+                <h3 className="font-bold text-base text-primary">
                   {step.title}
                 </h3>
                 <p className="font-medium text-xl text-[#1B1C17] mt-0.5">

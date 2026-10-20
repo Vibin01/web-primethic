@@ -36,7 +36,7 @@ export default function WhereHiringBreaksSection() {
           WHERE HIRING BREAK
         </p>
 
-        <h2 className="font-heading font-extrabold text-h2 leading-tight mb-xs">
+        <h2 className="font-extrabold text-h2 leading-tight mb-xs">
           <span className="text-[#1B1C17]">The Outcome </span>
           <span className="text-primary">Happens Last.</span>
         </h2>
@@ -57,7 +57,7 @@ export default function WhereHiringBreaksSection() {
                 alt={step.title}
                 className="size-iconsize-md object-contain mb-sm"
               />
-              <h3 className="font-heading font-bold text-base text-[#1B1C17] mb-xs">
+              <h3 className="font-bold text-base text-[#1B1C17] mb-xs">
                 {step.title}
               </h3>
               <p className="font-medium text-xl text-[#1B1C17] leading-relaxed">
