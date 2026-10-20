@@ -1,93 +1,100 @@
-import AlignmentCards from "./AlignmentCard";
+"use client";
+
+import React from "react";
+import { ArrowRight } from "lucide-react";
+import { GradientButton } from "@/components/button/GradientButton";
 
 export default function HeroSection() {
+  const scrollToConnectEC = () => {
+    const el = document.getElementById("connect-ec");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <section className="w-full bg-white mt-[15%] pb-[5%]">
-      <div className="md:max-w-[80%] ">
-        {/* Solutions */}
-        <p
-          className="font-bold
-          text-base
-          text-[#1B1C17]
-          uppercase mb-sm"
-        >
-          SOLUTIONS
-        </p>
+    <section className="w-full bg-white ">
+      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-xl">
+        {/* Left Column: Text & CTA */}
+        <div className="w-full md:w-[60%]">
+          {/* Eyebrow */}
+          <p className="font-bold text-base text-[#1B1C17] uppercase ">
+            ALIGNMENT IN HIRING SYSTEMS
+          </p>
 
-        {/* Heading */}
-        <h1
-          className="font-extrabold
-          text-[#0668E1]
-          text-h2 mb-md"
-        >
-          Systems where alignment holds
-          <br />
-          across the hiring journey.
-        </h1>
+          {/* Main Heading */}
+          <h1 className="font-heading font-extrabold text-primary text-h2 leading-tight mb-md">
+            Hiring Keeps Moving.
+            <br />
+            Alignment Does Not Always
+            <br />
+            Move With It.
+          </h1>
 
-        {/* Description */}
-        <div className="flex flex-col md:flex-row gap-sm md:gap-xl justify-between w-full mb-xl pb-xl">
-          <div className="flex items-center gap-sm">
-            <img
-              src="/solutions/icons/tick-icon.svg"
-              alt="tickicon"
-              className="size-iconsize-sm "
-            />
+          {/* Subtitle / Description 1 */}
+          <p className="font-medium text-base text-[#1B1C17] leading-relaxed mb-sm">
+            Systems record progress. People continue responding to changing priorities, expectations and circumstances.
+          </p>
 
-            <p
-              className="font-medium
-          text-base
-          text-[#1B1C17]
-          
-          text-nowrap
-          
-          "
-            >
-              <span className="font-bold">Clarity</span> Make informed
-              decisions.
-            </p>
-          </div>
-          <div className="flex items-center gap-sm">
-            <img
-              src="/solutions/icons/tick-icon.svg"
-              alt="tickicon"
-              className="size-iconsize-sm"
-            />
-            <p
-              className="font-medium
-          text-base
-          text-[#1B1C17]
-        
-          text-nowrap
+          {/* Description 2 (Bold highlight) */}
+          <p className="font-bold text-xl text-[#1B1C17] mb-xs">
+            Primethic applies Alignment Continuity to hiring systems.
+          </p>
 
-          mb-xs"
-            >
-              <span className="font-bold"> Continuity </span> Stay aligned.
-            </p>
-          </div>
-          <div className="flex items-center gap-sm">
-            <img
-              src="/solutions/icons/tick-icon.svg"
-              alt="tickicon"
-              className="size-iconsize-sm"
-            />
-            <p
-              className="font-medium
-          text-base
-          text-[#1B1C17]
-          
-          
-          text-nowrap
-          "
-            >
-              <span className="font-bold"> Predictability</span> Achieve
-              reliable outcomes.
-            </p>
-          </div>
+          {/* CTA Button */}
+          <GradientButton text="Explore Connect EC " className="px-xl" />
         </div>
 
-        {/* Buttons */}
-        <AlignmentCards />
+        {/* Right Column: Status Card */}
+        <div className="w-full md:w-[35%] flex justify-center md:justify-end">
+          <div className="w-full bg-white border border-[#E2EEFC] rounded-lg p-md shadow-mobile-medium md:shadow-web-medium">
+            {/* INTERVIEW */}
+            <div>
+              <span className="text-primary font-bold text-lg tracking-wider uppercase block">
+                INTERVIEW
+              </span>
+              <p className="text-[#1B1C17] font-bold text-base">
+                Scheduled
+              </p>
+            </div>
+
+            {/* Divider */}
+            <div className="border-b border-[#E2EFFE] my-sm" />
+
+            {/* OFFER */}
+            <div>
+              <span className="text-primary font-bold text-lg tracking-wider uppercase block">
+                OFFER
+              </span>
+              <p className="text-[#1B1C17] font-bold text-base">
+                Accepted
+              </p>
+            </div>
+
+            {/* Divider */}
+            <div className="border-b border-[#E2EFFE] my-sm" />
+
+            {/* ROLE */}
+            <div className="mb-sm">
+              <span className="text-primary font-bold text-lg tracking-wider uppercase block">
+                ROLE
+              </span>
+              <p className="text-[#1B1C17] font-bold text-base">
+                Open
+              </p>
+            </div>
+
+            {/* Highlighted Blue Block */}
+            <div className="bg-[#0668E1] rounded-md p-md text-white border border-[#D3E6FF]">
+              <span className="text-white font-medium text-lg uppercase block">
+                CONTINUITY
+              </span>
+              <p className="text-white font-bold text-base">
+                Still Changing
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

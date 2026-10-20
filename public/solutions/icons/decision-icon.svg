@@ -1,25 +1,3 @@
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_di_20946_80888)">
-<rect x="20" y="19" width="40" height="40" rx="20" fill="#0668E1" style="fill:#0668E1;fill:color(display-p3 0.0235 0.4078 0.8824);fill-opacity:1;"/>
-<path d="M39 32H36L40 28L44 32H41V36.43C40.25 36.89 39.58 37.46 39 38.12V32ZM50 38L46 34V37C44.2631 36.9286 42.5656 37.5303 41.2614 38.6798C39.9573 39.8293 39.1472 41.4378 39 43.17C38.2502 43.4362 37.6365 43.9889 37.2935 44.7068C36.9504 45.4247 36.906 46.2494 37.17 47C37.4362 47.7498 37.9889 48.3635 38.7068 48.7065C39.4247 49.0496 40.2494 49.094 41 48.83C41.7492 48.5629 42.3622 48.0101 42.7051 47.2925C43.0479 46.5749 43.0929 45.7507 42.83 45C42.53 44.14 41.85 43.47 41 43.17C41.47 39.17 45.47 38.97 45.95 38.97V41.97L50 38ZM38.63 38.59C37.3032 37.5658 35.6761 37.0071 34 37V34L30 38L34 42V39C35.34 39.03 36.63 39.5 37.64 40.4C37.89 39.76 38.22 39.15 38.63 38.59Z" fill="white" style="fill:white;fill-opacity:1;"/>
-</g>
-<defs>
-<filter id="filter0_di_20946_80888" x="0" y="0" width="80" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feMorphology radius="5" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_20946_80888"/>
-<feOffset dy="1"/>
-<feGaussianBlur stdDeviation="7.5"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.0235294 0 0 0 0 0.407843 0 0 0 0 0.882353 0 0 0 0.05 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_20946_80888"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_20946_80888" result="shape"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dx="-1" dy="-4"/>
-<feGaussianBlur stdDeviation="1.25"/>
-<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="shape" result="effect2_innerShadow_20946_80888"/>
-</filter>
-</defs>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.3535 8.33073H13.3535L20.0202 1.66406L26.6868 8.33073H21.6868V15.7141C20.4368 16.4807 19.3202 17.4307 18.3535 18.5307V8.33073ZM36.6868 18.3307L30.0202 11.6641V16.6641C27.1253 16.545 24.2961 17.5479 22.1226 19.4638C19.949 21.3796 18.5988 24.0604 18.3535 26.9474C17.1038 27.3911 16.081 28.3122 15.5093 29.5087C14.9376 30.7053 14.8636 32.0797 15.3035 33.3307C15.7472 34.5804 16.6683 35.6032 17.8648 36.175C19.0614 36.7467 20.4358 36.8207 21.6868 36.3807C22.9355 35.9356 23.9571 35.0143 24.5286 33.8182C25.1001 32.6221 25.175 31.2485 24.7368 29.9974C24.2368 28.5641 23.1035 27.4474 21.6868 26.9474C22.4702 20.2807 29.1369 19.9474 29.9368 19.9474V24.9474L36.6868 18.3307ZM17.7368 19.3141C15.5255 17.6071 12.8136 16.6759 10.0202 16.6641V11.6641L3.35352 18.3307L10.0202 24.9974V19.9974C12.2535 20.0474 14.4035 20.8307 16.0868 22.3307C16.5035 21.2641 17.0535 20.2474 17.7368 19.3141Z" fill="#0668E1" style="fill:#0668E1;fill:color(display-p3 0.0235 0.4078 0.8824);fill-opacity:1;"/>
 </svg>

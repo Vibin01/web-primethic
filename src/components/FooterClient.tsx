@@ -69,7 +69,7 @@ export default function FooterClient({ children }: { children: React.ReactNode }
                   </div>
 
                   <div className="mt-5 lg:mt-0 flex flex-col lg:flex-row justify-center items-center lg:items-start lg:justify-between ">
-                    <div className="flex justify-center items-center flex-wrap lg:flex-nowrap lg:block   text-[14px] md:text-[16px]  text-start lg:font-medium space-x-3">
+                    <div className="flex justify-center items-center flex-wrap lg:flex-nowrap lg:block   text-xl  text-start lg:font-medium space-x-3">
                      
                       <Link href="/terms-and-condition" target="_blank">&nbsp;&nbsp;Terms & Conditions</Link>
                       |&nbsp;&nbsp; {""}
@@ -80,21 +80,18 @@ export default function FooterClient({ children }: { children: React.ReactNode }
                   </div>
                 </div>
             </div>
-             <div className="bg-[#FFFFFF1A] -mx-[8%] md:-mx-[5%] flex flex-col items-center justify-center py-[4%]">
-                  <p className=" text-lg  font-normal flex flex-col justify-center items-center ">
-                    <span>
-                      <Link href="https://primethic.com/">
-                        © Copyright Primethic Private Limited{" "}
-                      </Link>
-                      {new Date().getFullYear()}. All Rights Reserved.
-                    </span>
-                    
-                  </p>
-                  <p className="font-medium text-lg mt-[1%] text-center px-[4%]">The principles, frameworks, and methodologies are proprietary to and owned by Primethic Private Limited. Unauthorized use, reproduction, or distribution is strictly prohibited.</p>
-           <p className="text-[5px] lg:text-[9px] mt-[1%] ">
-                      {" "}
-                      {children}
-                    </p>
+          <div className="bg-[#FFFFFF1A] -mx-[8%] md:-mx-[5%] flex flex-col items-center justify-center py-4 md:py-[2%] px-[4%]">
+              <p className="text-lg font-normal flex flex-col justify-center items-center">
+                <span>
+                  <Link href="https://primethic.com/" target="_blank" aria-label="Primethic Private Limited" className="hover:underline">
+                    © {new Date().getFullYear()} Primethic Private Limited.
+                  </Link>
+                </span>
+              </p>
+              <p className="font-normal md:font-medium text-lg mt-[1%] text-center px-[5%] leading-relaxed">
+                Alignment Continuity, the Theory of Alignment Continuity, and the proprietary Alignment Architecture—as expressed and implemented through the original definitions, frameworks, models, methodologies, assessment logic, visual representations, and associated content presented on this website—were developed by Primethic Private Limited. Unauthorized reproduction, adaptation, distribution, or commercial exploitation of these protected materials is prohibited.
+              </p>
+              <p className="text-[5px] lg:text-[9px] mt-[1%] text-white/90"> {children}</p>
             </div>
           </footer>
         

@@ -1,11 +1,13 @@
 import React from "react";
-import VisibilitySection from "./VisibilitySection";
 import HeroSection from "./HeroSection";
-import ConnectECSection from "./ConnectECSection";
-import HiringCardsSection from "./HiringCardsSection";
-import WhyConnectEC from "./WhyConnectEC";
-import MakeHiringEasyBanner from "./MakeHiringEasyBanner";
-import WhatsNextSection from "./WhatsNextSection";
+import SystemProblemsSection from "./SystemProblemsSection";
+import WhereHiringBreaksSection from "./WhereHiringBreaksSection";
+import AlignmentAcrossHiringSection from "./AlignmentAcrossHiringSection";
+import AlignmentContinuitySection from "./AlignmentContinuitySection";
+import PrimethicResponseSection from "./PrimethicResponseSection";
+import WhatAlignmentChangesSection from "./WhatAlignmentChangesSection";
+import TheWiderDirectionSection from "./TheWiderDirectionSection";
+import WhyConnectECExistsSection from "./WhyConnectECExistsSection";
 
 export const metadata = {
   title: "Alignment in Hiring Systems | Connect EC",
@@ -15,29 +17,37 @@ export const metadata = {
 
 const page = () => {
   return (
-     <div className="space-y-[5%]">
-        <div className="pt-[15%] md:pt-0 px-[5%] lg:px-[8%] ">
+    <div className="">
+      <div className=" mt-[20%] md:mt-[7%] py-[8%] md:py-[6%] px-[5%] lg:px-[8%] ">
         <HeroSection />
       </div>
-      <div className="pt-[15%] md:pt-0 px-[5%] md:px-[8%]">
-        <ConnectECSection />
+      <div className="py-[8%] md:py-[6%] px-[5%] md:px-[8%]">
+        <SystemProblemsSection />
       </div>
-      <div className="pt-[15%] md:pt-0 px-[5%] md:px-[8%]">
-        <HiringCardsSection />
+      <div className="py-[8%] md:py-[6%] px-[5%] md:px-[8%]">
+        <WhereHiringBreaksSection />
       </div>
-      <div className="pt-[15%] md:pt-0 px-[5%] md:px-[8%]">
+      <div className="py-[8%] md:py-[6%] px-[5%] md:px-[8%] bg-primary">
+        <PrimethicResponseSection />
+      </div>
+      <div className="py-[8%] md:py-[6%] px-[5%]">
+        <AlignmentAcrossHiringSection />
+      </div>
+      <div className="py-[8%] md:py-[6%] px-[5%] md:px-[8%]">
+        <AlignmentContinuitySection />
+      </div>
 
-      <VisibilitySection />
-</div>
-      <div className="pt-[15%] md:pt-0 px-[5%] md:px-[8%]">
-        <WhyConnectEC />
+      <div className="py-[8%] md:py-[6%] px-[5%] md:px-[8%]">
+        <WhatAlignmentChangesSection />
       </div>
-      <div className="pt-[15%] md:pt-0 px-[5%] md:px-[8%]">
-        <MakeHiringEasyBanner />
+
+      <div className="py-[8%] md:py-[6%] bg-[#E6F2FF] px-[5%] md:px-[8%]">
+        <TheWiderDirectionSection />
       </div>
-<div className="mt-[15%] md:mt-0 bg-[#F7FBFF] px-[5%] md:px-[8%]">
-<WhatsNextSection/>
-</div>
+
+      <div className="py-[8%] md:py-[6%] bg-[#F7FBFF] px-[5%] md:px-[8%]">
+        <WhyConnectECExistsSection />
+      </div>
     </div>
   );
 };

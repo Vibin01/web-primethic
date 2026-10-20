@@ -3,7 +3,7 @@ import { HiH3 } from "react-icons/hi2";
 
 export default function ConnectECSection() {
   return (
-    <section className="w-full ">
+    <section id="connect-ec" className="w-full scroll-mt-28">
       <div className="">
         <div className="flex flex-col lg:flex-row items-start justify-between gap-sm">
           {/* Left Content */}

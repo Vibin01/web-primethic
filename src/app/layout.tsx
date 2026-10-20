@@ -1,42 +1,18 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "../components/Header";
-import { Exo_2, Geist } from "next/font/google";
-import {IBM_Plex_Sans} from "next/font/google";
 import Footer from "@/components/Footer";
 import Script from "next/script";
 import { Toaster } from "sonner";
-import { cn } from "@/lib/utils";
-
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.BASE_URl || "https://primethic.com"),
   title: "Alignment Intelligence Systems | PRIMETHIC",
   description: "Alignment intelligence systems ensure decisions, execution, and outcomes stay consistent under real-world conditions.",
-
- icons: {
+  icons: {
     icon: "/favicon.jpeg",
-  },};
-
-const exo2 = Exo_2({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
-  variable:"--font-exo2",
-  display: "swap",
-});
-
-const ibmPlexSans = IBM_Plex_Sans({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
-  style: ["normal", "italic"],
-  variable: "--font-ibm",
-  display: "swap",
-});
-
-
-
-
+  },
+};
 
 export default function RootLayout({
   children,
@@ -44,33 +20,37 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn("font-sans", geist.variable)}>
-          <head>
-       {/* Google Tag Manager */}
-              <Script
-                id="gtm-head"
-                strategy="afterInteractive"
-              >
-                {`
-                  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                  })(window,document,'script','dataLayer','GTM-5DBXV73F');
-                `}
-              </Script>
-              {/* End Google Tag Manager */}
-    </head>
-      <body
-        className={`${exo2.variable} ${ibmPlexSans.variable} relative bg-white! `}
-      >
+    <html lang="en" className="font-sans">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+          rel="stylesheet"
+        />
+        {/* Google Tag Manager */}
+        <Script
+          id="gtm-head"
+          strategy="afterInteractive"
+        >
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5DBXV73F');
+          `}
+        </Script>
+        {/* End Google Tag Manager */}
+      </head>
+      <body className="relative bg-white!">
         <Toaster
           position="top-right"
           richColors
           closeButton
           expand={false}
         />
-         {/* GTM NoScript */}
+        {/* GTM NoScript */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-5DBXV73F"
@@ -80,9 +60,9 @@ export default function RootLayout({
           />
         </noscript>
         {/* End GTM NoScript */}
-        <Header/>
+        <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
